@@ -83,6 +83,9 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forgot.xaml.cs">
       <DependentUpon>Forgot.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
     <Content Include="Assets\HubBackground.theme-light.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forgot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -107,5 +107,10 @@ namespace Qomo_Hack
         }
 
         #endregion
+
+        private void rateus(object sender, TappedRoutedEventArgs e)
+        {
+            
+        }
     }
 }
