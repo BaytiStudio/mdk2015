@@ -149,5 +149,25 @@ namespace Qomo_Hack
         }
 
         #endregion
+
+        private void log(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
+        }
+
+        private void lapor(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Lapor));
+        }
+
+        private void komo_search(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(listDaerah));
+        }
+
+        private void profil(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(userProfile));
+        }
     }
 }

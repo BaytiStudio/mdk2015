@@ -124,7 +124,11 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
+<<<<<<< HEAD
             _typeNameTable = new string[11];
+=======
+            _typeNameTable = new string[16];
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
             _typeNameTable[0] = "Qomo_Hack.HubPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -133,11 +137,24 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
             _typeNameTable[5] = "Qomo_Hack.Common.ObservableDictionary";
             _typeNameTable[6] = "Object";
             _typeNameTable[7] = "String";
+<<<<<<< HEAD
             _typeNameTable[8] = "Qomo_Hack.Login";
             _typeNameTable[9] = "Qomo_Hack.SectionPage";
             _typeNameTable[10] = "Qomo_Hack.ItemPage";
 
             _typeTable = new global::System.Type[11];
+=======
+            _typeNameTable[8] = "Qomo_Hack.komDaerah";
+            _typeNameTable[9] = "Qomo_Hack.Lapor";
+            _typeNameTable[10] = "Qomo_Hack.listDaerah";
+            _typeNameTable[11] = "Qomo_Hack.Login";
+            _typeNameTable[12] = "Qomo_Hack.SectionPage";
+            _typeNameTable[13] = "Qomo_Hack.ItemPage";
+            _typeNameTable[14] = "Qomo_Hack.Signup";
+            _typeNameTable[15] = "Qomo_Hack.userProfile";
+
+            _typeTable = new global::System.Type[16];
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
             _typeTable[0] = typeof(global::Qomo_Hack.HubPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -146,9 +163,20 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
             _typeTable[5] = typeof(global::Qomo_Hack.Common.ObservableDictionary);
             _typeTable[6] = typeof(global::System.Object);
             _typeTable[7] = typeof(global::System.String);
+<<<<<<< HEAD
             _typeTable[8] = typeof(global::Qomo_Hack.Login);
             _typeTable[9] = typeof(global::Qomo_Hack.SectionPage);
             _typeTable[10] = typeof(global::Qomo_Hack.ItemPage);
+=======
+            _typeTable[8] = typeof(global::Qomo_Hack.komDaerah);
+            _typeTable[9] = typeof(global::Qomo_Hack.Lapor);
+            _typeTable[10] = typeof(global::Qomo_Hack.listDaerah);
+            _typeTable[11] = typeof(global::Qomo_Hack.Login);
+            _typeTable[12] = typeof(global::Qomo_Hack.SectionPage);
+            _typeTable[13] = typeof(global::Qomo_Hack.ItemPage);
+            _typeTable[14] = typeof(global::Qomo_Hack.Signup);
+            _typeTable[15] = typeof(global::Qomo_Hack.userProfile);
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -185,9 +213,20 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
 
         private object Activate_0_HubPage() { return new global::Qomo_Hack.HubPage(); }
         private object Activate_5_ObservableDictionary() { return new global::Qomo_Hack.Common.ObservableDictionary(); }
+<<<<<<< HEAD
         private object Activate_8_Login() { return new global::Qomo_Hack.Login(); }
         private object Activate_9_SectionPage() { return new global::Qomo_Hack.SectionPage(); }
         private object Activate_10_ItemPage() { return new global::Qomo_Hack.ItemPage(); }
+=======
+        private object Activate_8_komDaerah() { return new global::Qomo_Hack.komDaerah(); }
+        private object Activate_9_Lapor() { return new global::Qomo_Hack.Lapor(); }
+        private object Activate_10_listDaerah() { return new global::Qomo_Hack.listDaerah(); }
+        private object Activate_11_Login() { return new global::Qomo_Hack.Login(); }
+        private object Activate_12_SectionPage() { return new global::Qomo_Hack.SectionPage(); }
+        private object Activate_13_ItemPage() { return new global::Qomo_Hack.ItemPage(); }
+        private object Activate_14_Signup() { return new global::Qomo_Hack.Signup(); }
+        private object Activate_15_userProfile() { return new global::Qomo_Hack.userProfile(); }
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -250,27 +289,90 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
                 xamlType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
+<<<<<<< HEAD
             case 8:   //  Qomo_Hack.Login
                 userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_8_Login;
+=======
+            case 8:   //  Qomo_Hack.komDaerah
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_komDaerah;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
+            case 9:   //  Qomo_Hack.Lapor
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_Lapor;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Qomo_Hack.listDaerah
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_listDaerah;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Qomo_Hack.Login
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_Login;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Qomo_Hack.SectionPage
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_SectionPage;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+<<<<<<< HEAD
             case 9:   //  Qomo_Hack.SectionPage
                 userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_9_SectionPage;
+=======
+            case 13:   //  Qomo_Hack.ItemPage
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_ItemPage;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
+<<<<<<< HEAD
             case 10:   //  Qomo_Hack.ItemPage
                 userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_10_ItemPage;
+=======
+            case 14:   //  Qomo_Hack.Signup
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_Signup;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Qomo_Hack.userProfile
+                userType = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_userProfile;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -291,34 +393,108 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
             var that = (global::Qomo_Hack.HubPage)instance;
             return that.DefaultViewModel;
         }
+<<<<<<< HEAD
         private object get_2_Login_NavigationHelper(object instance)
+=======
+        private object get_2_komDaerah_NavigationHelper(object instance)
+        {
+            var that = (global::Qomo_Hack.komDaerah)instance;
+            return that.NavigationHelper;
+        }
+        private object get_3_komDaerah_DefaultViewModel(object instance)
+        {
+            var that = (global::Qomo_Hack.komDaerah)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_4_Lapor_NavigationHelper(object instance)
+        {
+            var that = (global::Qomo_Hack.Lapor)instance;
+            return that.NavigationHelper;
+        }
+        private object get_5_Lapor_DefaultViewModel(object instance)
+        {
+            var that = (global::Qomo_Hack.Lapor)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_6_listDaerah_NavigationHelper(object instance)
+        {
+            var that = (global::Qomo_Hack.listDaerah)instance;
+            return that.NavigationHelper;
+        }
+        private object get_7_listDaerah_DefaultViewModel(object instance)
+        {
+            var that = (global::Qomo_Hack.listDaerah)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_8_Login_NavigationHelper(object instance)
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         {
             var that = (global::Qomo_Hack.Login)instance;
             return that.NavigationHelper;
         }
+<<<<<<< HEAD
         private object get_3_Login_DefaultViewModel(object instance)
+=======
+        private object get_9_Login_DefaultViewModel(object instance)
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         {
             var that = (global::Qomo_Hack.Login)instance;
             return that.DefaultViewModel;
         }
+<<<<<<< HEAD
         private object get_4_SectionPage_NavigationHelper(object instance)
+=======
+        private object get_10_SectionPage_NavigationHelper(object instance)
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         {
             var that = (global::Qomo_Hack.SectionPage)instance;
             return that.NavigationHelper;
         }
+<<<<<<< HEAD
         private object get_5_SectionPage_DefaultViewModel(object instance)
+=======
+        private object get_11_SectionPage_DefaultViewModel(object instance)
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         {
             var that = (global::Qomo_Hack.SectionPage)instance;
             return that.DefaultViewModel;
         }
+<<<<<<< HEAD
         private object get_6_ItemPage_NavigationHelper(object instance)
+=======
+        private object get_12_ItemPage_NavigationHelper(object instance)
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         {
             var that = (global::Qomo_Hack.ItemPage)instance;
             return that.NavigationHelper;
         }
+<<<<<<< HEAD
         private object get_7_ItemPage_DefaultViewModel(object instance)
+=======
+        private object get_13_ItemPage_DefaultViewModel(object instance)
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
         {
             var that = (global::Qomo_Hack.ItemPage)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_14_Signup_NavigationHelper(object instance)
+        {
+            var that = (global::Qomo_Hack.Signup)instance;
+            return that.NavigationHelper;
+        }
+        private object get_15_Signup_DefaultViewModel(object instance)
+        {
+            var that = (global::Qomo_Hack.Signup)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_16_userProfile_NavigationHelper(object instance)
+        {
+            var that = (global::Qomo_Hack.userProfile)instance;
+            return that.NavigationHelper;
+        }
+        private object get_17_userProfile_DefaultViewModel(object instance)
+        {
+            var that = (global::Qomo_Hack.userProfile)instance;
             return that.DefaultViewModel;
         }
 
@@ -341,40 +517,127 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_1_HubPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+<<<<<<< HEAD
             case "Qomo_Hack.Login.NavigationHelper":
                 userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Login");
                 xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
                 xamlMember.Getter = get_2_Login_NavigationHelper;
+=======
+            case "Qomo_Hack.komDaerah.NavigationHelper":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.komDaerah");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+                xamlMember.Getter = get_2_komDaerah_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.komDaerah.DefaultViewModel":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.komDaerah");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+                xamlMember.Getter = get_3_komDaerah_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.Lapor.NavigationHelper":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Lapor");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+                xamlMember.Getter = get_4_Lapor_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.Lapor.DefaultViewModel":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Lapor");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+                xamlMember.Getter = get_5_Lapor_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.listDaerah.NavigationHelper":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.listDaerah");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+                xamlMember.Getter = get_6_listDaerah_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.listDaerah.DefaultViewModel":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.listDaerah");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+                xamlMember.Getter = get_7_listDaerah_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.Login.NavigationHelper":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Login");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+                xamlMember.Getter = get_8_Login_NavigationHelper;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 xamlMember.SetIsReadOnly();
                 break;
             case "Qomo_Hack.Login.DefaultViewModel":
                 userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Login");
                 xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+<<<<<<< HEAD
                 xamlMember.Getter = get_3_Login_DefaultViewModel;
+=======
+                xamlMember.Getter = get_9_Login_DefaultViewModel;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 xamlMember.SetIsReadOnly();
                 break;
             case "Qomo_Hack.SectionPage.NavigationHelper":
                 userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.SectionPage");
                 xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+<<<<<<< HEAD
                 xamlMember.Getter = get_4_SectionPage_NavigationHelper;
+=======
+                xamlMember.Getter = get_10_SectionPage_NavigationHelper;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 xamlMember.SetIsReadOnly();
                 break;
             case "Qomo_Hack.SectionPage.DefaultViewModel":
                 userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.SectionPage");
                 xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+<<<<<<< HEAD
                 xamlMember.Getter = get_5_SectionPage_DefaultViewModel;
+=======
+                xamlMember.Getter = get_11_SectionPage_DefaultViewModel;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 xamlMember.SetIsReadOnly();
                 break;
             case "Qomo_Hack.ItemPage.NavigationHelper":
                 userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.ItemPage");
                 xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+<<<<<<< HEAD
                 xamlMember.Getter = get_6_ItemPage_NavigationHelper;
+=======
+                xamlMember.Getter = get_12_ItemPage_NavigationHelper;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 xamlMember.SetIsReadOnly();
                 break;
             case "Qomo_Hack.ItemPage.DefaultViewModel":
                 userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.ItemPage");
                 xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+<<<<<<< HEAD
                 xamlMember.Getter = get_7_ItemPage_DefaultViewModel;
+=======
+                xamlMember.Getter = get_13_ItemPage_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.Signup.NavigationHelper":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Signup");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+                xamlMember.Getter = get_14_Signup_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.Signup.DefaultViewModel":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.Signup");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+                xamlMember.Getter = get_15_Signup_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.userProfile.NavigationHelper":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.userProfile");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Qomo_Hack.Common.NavigationHelper");
+                xamlMember.Getter = get_16_userProfile_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Qomo_Hack.userProfile.DefaultViewModel":
+                userType = (global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Qomo_Hack.userProfile");
+                xamlMember = new global::Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Qomo_Hack.Common.ObservableDictionary");
+                xamlMember.Getter = get_17_userProfile_DefaultViewModel;
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 xamlMember.SetIsReadOnly();
                 break;
             }

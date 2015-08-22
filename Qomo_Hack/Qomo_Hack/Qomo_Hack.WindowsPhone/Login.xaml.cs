@@ -115,7 +115,10 @@ namespace Qomo_Hack
 
         private void signup_tap(object sender, TappedRoutedEventArgs e)
         {
-
+            if (!Frame.Navigate(typeof(Signup)))
+            {
+                throw new Exception("NavigationFailedExceptionMessage");
+            }
         }
 
         private void forgot_tap(object sender, TappedRoutedEventArgs e)
