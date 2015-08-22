@@ -1,13 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Curl
-{
-  protected 	$ci;
-
-	function __construct()
-	{
-        $this->ci =& get_instance();
-	}
+<?php 
 
 	function bacaHTML($url){
 	    // inisialisasi CURL
@@ -38,8 +29,4 @@ class Curl
 	}
 
 	
-
-}
-
-/* End of file curl.php */
-/* Location: ./application/libraries/curl.php */
+?>
