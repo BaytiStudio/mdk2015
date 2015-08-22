@@ -16,16 +16,16 @@
       </tr>
       <tr class="form-horizontal">
         <td>
-          <h5>Xp</h5>
+          <h5 class="ct-azure">Xp</h5>
         </td>
         <td>
-          <h5>100</h5>
+          <h5 class="ct-azure">100</h5>
         </td>
         <td>
-          <h5>Pts</h5>
+          <h5 class="ct-orange">Pts</h5>
         </td>
         <td>
-          <h5>50</h5>
+          <h5 class="ct-orange">50</h5>
         </td>
       </tr>
       <tr class="form-horizontal">
@@ -66,6 +66,11 @@
         </td>
         <td colspan="2">
           <h5>: jl.benda barat 14</h5>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="text-center">
+          <a href="?module=edit" class="btn btn-warning">Edit</a>
         </td>
       </tr>
     </table>
