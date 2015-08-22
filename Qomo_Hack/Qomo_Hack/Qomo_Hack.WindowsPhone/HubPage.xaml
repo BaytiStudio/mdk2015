@@ -233,6 +233,7 @@
                             </StackPanel>                                                    
                         </Grid>
                         <Button Content="login" Click="log"></Button>
+                        <Button Content="lapor" Click="lapor"></Button>
                     </StackPanel>
                     
                 </Grid>

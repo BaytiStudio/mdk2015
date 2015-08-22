@@ -31,7 +31,7 @@
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <ScrollViewer>
                 <StackPanel>
-                    <Button Content="Get Location" FontSize="25" HorizontalAlignment="Center" Tapped="getLoc"></Button>
+                    <Button x:ConnectionId='1' Content="Get Location" FontSize="25" HorizontalAlignment="Center"                ></Button>
                     
                     <StackPanel Orientation="Horizontal" x:Name="prov" Visibility="Collapsed">
                         <TextBlock Text="Provinsi : " FontSize="20" Margin="0,0,5,0"></TextBlock>    
@@ -71,8 +71,8 @@
                     <TextBlock Text="Harga" FontSize="17"></TextBlock>
                     <TextBox PlaceholderText="Harga Komoditas /kg" InputScope="Number" Name="hrg_kom"></TextBox>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button Content="Tweet" Click="tweet_click" Margin="0,0,10,0"></Button>
-                        <Button Content="SMS" Click="sms_click"></Button>
+                        <Button x:ConnectionId='2' Content="Tweet"                     Margin="0,0,10,0"></Button>
+                        <Button x:ConnectionId='3' Content="SMS"                  ></Button>
                     </StackPanel>
                 </StackPanel>
             </ScrollViewer>
@@ -81,3 +81,4 @@
         </Grid>
     </Grid>
 </Page>
+

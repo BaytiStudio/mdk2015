@@ -107,5 +107,20 @@ namespace Qomo_Hack
         }
 
         #endregion
+
+        private void tweet_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void sms_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void getLoc(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }
