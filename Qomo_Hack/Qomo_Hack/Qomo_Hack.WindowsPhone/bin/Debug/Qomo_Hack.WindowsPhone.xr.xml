@@ -6,9 +6,8 @@
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="ImagePath" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Groups" />
-    <RootPropertyPathName Name="Items" />
     <RootPropertyPathName Name="Group" />
+    <RootPropertyPathName Name="Items" />
     <RootPropertyPathName Name="Item" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -39,6 +38,9 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="RowDefinitions" />
       <RootMethod Name="GetColumn" />
@@ -60,7 +62,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -68,6 +73,9 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="CharacterSpacing" />
     </RootType>
@@ -84,54 +92,53 @@
       <RootMethod Name="GetAutomationId" />
       <RootMethod Name="SetAutomationId" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Hub">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Sections" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="Items" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.HubSection">
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Header" />
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="HeaderTemplate" />
-      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
       <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="SelectionMode" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="TabIndex" />
-      <RootProperty Name="IsSwipeEnabled" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
-      <RootEvent Name="ItemClick" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo">
-      <RootMethod Name="GetExitElementContainer" />
-      <RootMethod Name="SetExitElementContainer" />
+    <RootType FullName="Windows.UI.Xaml.Media.TransformGroup">
+      <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="SelectionMode" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="ItemsPanel" />
-      <RootEvent Name="ItemClick" />
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
-      <RootProperty Name="Template" />
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsWrapGrid" />
     <RootType FullName="Qomo_Hack.HubPage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
       <RootProperty Name="DefaultNavigationTransitionInfo" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="TabIndex" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="IsSwipeEnabled" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Qomo_Hack.SectionPage" />
     <RootType FullName="Qomo_Hack.ItemPage" />
