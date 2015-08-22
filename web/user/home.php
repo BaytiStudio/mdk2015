@@ -44,7 +44,7 @@
                                 <li><a href="?module=lapor">Lapor</a></li>
                                 <li><a href="?module=profil">Profil</a></li>
                                 <li><a href="?module=reward">Reward</a></li>
-                                <li><a href="../about.php">About</a></li>
+                                <li><a href="?module=about">About</a></li>
                               </ul>
                               <ul class="nav navbar-nav navbar-right">
 
