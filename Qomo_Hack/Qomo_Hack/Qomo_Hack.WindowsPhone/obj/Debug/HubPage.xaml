@@ -74,10 +74,17 @@
 
         <!--<Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+<<<<<<< HEAD
+=======
+        <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
+            <HubSection x:Uid="HubSection1" Header="HOME" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+>>>>>>> 278cf3cfedf1bee61a5953b95872990ddd018ed1
+=======
 
         <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="HOME" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
 
+>>>>>>> 8640ef3829ff1f58de83efec71ab2defdd2d1817
                 <DataTemplate>
                     <ListView
                         ItemsSource="{Binding}"
