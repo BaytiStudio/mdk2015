@@ -16,8 +16,13 @@ var ctx = c.getContext("2d");
 ctx.strokeStyle = "red";
 var y=50;
 y = 300-y;
+var y1=150;
+y1=300-y1;
+var y2=100;
+y2=300-y2;
 ctx.moveTo(0, y);
-ctx.lineTo(395, 100);
+ctx.lineTo(200, y1);
+ctx.lineTo(400, y2);
 ctx.stroke();
 
 ctx.font = "12px Arial";
