@@ -11,6 +11,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -140,7 +141,22 @@ namespace Qomo_Hack
         /// <param name="e">Event data that describes how this page was reached.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            this.navigationHelper.OnNavigatedTo(e);
+            //this.navigationHelper.OnNavigatedTo(e);
+
+            // Read data from a simple setting
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            Object value = localSettings.Values["exampleSetting"];
+
+            if (value == null)
+            {
+                // No data
+            }
+            else
+            {
+                string valu = Convert.ToString(value);
+                var dialog = new MessageDialog(valu).ShowAsync();
+            }
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

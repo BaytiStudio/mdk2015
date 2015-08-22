@@ -51,14 +51,10 @@
     <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Assets\HubBackground.theme-light.png">
       <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
     </AppxPackagedFile>
-<<<<<<< HEAD
-    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\LightGray.png">
-=======
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\logo bayti.png">
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\logo bayti.png">
       <PackagePath>Assets\logo bayti.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\LightGray.png">
->>>>>>> 1cee237fb52cb1c15e2c7bcfa9d78deb204b50e6
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\LightGray.png">
       <PackagePath>Assets\LightGray.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\MediumGray.png">
@@ -76,20 +72,13 @@
     <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\HubPage.xbf">
-=======
-=======
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\About.xbf">
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
     </AppxPackagedFile>
->>>>>>> 1cee237fb52cb1c15e2c7bcfa9d78deb204b50e6
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Forgot.xbf">
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Forgot.xbf">
       <PackagePath>Forgot.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\HubPage.xbf">
->>>>>>> 4f1459fce94be12d12d194ff7caa23dec76f3100
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\HubPage.xbf">
       <PackagePath>HubPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\komDaerah.xbf">

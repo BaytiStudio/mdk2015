@@ -32,21 +32,21 @@
             <StackPanel>
                 <TextBlock Text="Masuk" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
                 <TextBlock Text="Email" FontSize="20"></TextBlock>
-<<<<<<< HEAD
+
                 <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Type your registered email"></TextBox>
                 <TextBlock Text="Password" FontSize="20" ></TextBlock>
                 <PasswordBox PlaceholderText="Your account password" Name="password"></PasswordBox>
                 <Button x:Name="btnlogin" HorizontalAlignment="Center" Content="Login" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>
                 <TextBlock Text="Sign Up" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10" Tapped="signup_tap"></TextBlock>                
                 <TextBlock Text="Forgot Password" HorizontalAlignment="Center" FontSize="25" Tapped="forgot_tap"></TextBlock>
-=======
-                <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
+
+                <!--<TextBox x:Name="email1" InputScope="EmailSmtpAddress"  PlaceholderText="Masukan email anda"></TextBox>
                 <TextBlock Text="Kata Sandi" FontSize="20" ></TextBlock>
                 <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
-                <Button HorizontalAlignment="Center" Content="Masuk" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>
+                <Button HorizontalAlignment="Center" Content="Masuk" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>-->
                 <TextBlock Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10" Tapped="signup_tap"></TextBlock>                
                 <TextBlock Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25" Tapped="forgot_tap"></TextBlock>
->>>>>>> 4f1459fce94be12d12d194ff7caa23dec76f3100
+
             </StackPanel>
         </Grid>
     </Grid>
