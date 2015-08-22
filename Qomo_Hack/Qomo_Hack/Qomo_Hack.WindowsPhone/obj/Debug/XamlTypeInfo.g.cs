@@ -942,3 +942,28 @@ namespace Qomo_Hack.Qomo_Hack_WindowsPhone_XamlTypeInfo
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
