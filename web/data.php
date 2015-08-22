@@ -44,6 +44,8 @@
       </div>
       <div class="col-md-4">
         <h3>kolom tweet</h3>
+        <a class="twitter-timeline" href="https://twitter.com/search?q=Harga%20beras%20Harga%20Daging%20Harga%20Gula" data-widget-id="635107049907490816">Tweet tentang Harga beras Harga Daging Harga Gula</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
 
