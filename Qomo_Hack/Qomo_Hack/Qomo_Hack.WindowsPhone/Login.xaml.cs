@@ -161,6 +161,13 @@ namespace Qomo_Hack
                 //MessageBox.Show(e.Result.ToString());
                 //NavigationService.Navigate(new Uri("/DetailPage.xaml?sMemberID=" + strMemberID, UriKind.Relative));
                 //MessageBox.Show("berhasil");
+
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+                // Create a simple setting
+
+                localSettings.Values["exampleSetting"] = "Hello Windows";
+
                 var dialog = new MessageDialog("SELAMAT ANDA BERHASIL").ShowAsync();
                 Frame.Navigate(typeof(HubPage));
             }
@@ -169,8 +176,12 @@ namespace Qomo_Hack
                     //Logic login, ambil data dari database
             //}
 
+<<<<<<< HEAD
+           
+=======
             
 
+>>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
         }
             
         

@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Files><file>\Qomo_Hack.WindowsPhone.exe</file></Files>
