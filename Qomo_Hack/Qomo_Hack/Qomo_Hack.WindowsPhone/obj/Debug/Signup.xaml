@@ -16,45 +16,54 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
 
-        <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="Daftar" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        <StackPanel>
+            <Grid Height="100" VerticalAlignment="Top" Background="#81CFE0"></Grid>
+            <Grid Height="700" Background="#ECF0F1"></Grid>
         </StackPanel>
+        <!-- Title Panel -->
+        
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <ScrollViewer Height="Auto">
-                <Grid>
-                    <StackPanel>
-                        <TextBlock Text="Nama Lengkap" FontSize="20"></TextBlock>
-                        <TextBox PlaceholderText="Nama Lengkap" Name="nama_lkp"></TextBox>
-                        <TextBlock Text="No. Identitas (KTP/SIM)" FontSize="20"></TextBlock>
-                        <TextBox InputScope="Number" PlaceholderText="No. Identitas" Name="id_num"></TextBox>
-                        <TextBlock Text="Email" FontSize="20"></TextBlock>
-                        <TextBox InputScope="EmailSmtpAddress" PlaceholderText="Alamat Email" Name="email"></TextBox>
-                        <TextBlock Text="Kata Sandi" FontSize="20"></TextBlock>
-                        <PasswordBox PlaceholderText="Kata Sandi" Name="pass"></PasswordBox>
-                        <TextBlock Text="Ulang Kata Sandi" FontSize="20"></TextBlock>
-                        <PasswordBox PlaceholderText="Ulang Kata Sandi" Name="confPass"></PasswordBox>
-                        <TextBlock Text="Daftar Sebagai" FontSize="20"></TextBlock>
+            <StackPanel>
+                <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                    <TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,0,0,0"/>
+                    <TextBlock Text="Daftar" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+                </StackPanel>
 
-                        <StackPanel Orientation="Vertical">
-                            <RadioButton Content="Produsen" Name="produsen"></RadioButton>
-                            <RadioButton Content="Distributor" Name="distributor"></RadioButton>
-                            <RadioButton Content="Konsumen" Name="konsumen"></RadioButton>
+                <ScrollViewer Height="600">
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Foreground="Black" Text="Nama Lengkap" FontSize="20"></TextBlock>
+                            <TextBox PlaceholderText="Nama Lengkap" Name="nama_lkp"></TextBox>
+                            <TextBlock Foreground="Black" Text="No. Identitas (KTP/SIM)" FontSize="20"></TextBlock>
+                            <TextBox InputScope="Number" PlaceholderText="No. Identitas" Name="id_num"></TextBox>
+                            <TextBlock Foreground="Black" Text="Email" FontSize="20"></TextBlock>
+                            <TextBox InputScope="EmailSmtpAddress" PlaceholderText="Alamat Email" Name="email"></TextBox>
+                            <TextBlock Foreground="Black" Text="Kata Sandi" FontSize="20"></TextBlock>
+                            <PasswordBox PlaceholderText="Kata Sandi" Name="pass"></PasswordBox>
+                            <TextBlock Foreground="Black" Text="Ulang Kata Sandi" FontSize="20"></TextBlock>
+                            <PasswordBox PlaceholderText="Ulang Kata Sandi" Name="confPass"></PasswordBox>
+                            <TextBlock Foreground="Black" Text="Daftar Sebagai" FontSize="20"></TextBlock>
+
+                            <StackPanel Orientation="Vertical">
+                                <RadioButton Content="Produsen" BorderBrush="Black" Foreground="Black" Name="produsen"></RadioButton>
+                                <RadioButton Content="Distributor" BorderBrush="Black" Foreground="Black" Name="distributor"></RadioButton>
+                                <RadioButton Content="Konsumen" BorderBrush="Black" Foreground="Black" Name="konsumen"></RadioButton>
+                            </StackPanel>
+                            <Button x:ConnectionId='1' HorizontalAlignment="Center" Content="Daftar" Foreground="Black" BorderBrush="Black"                     ></Button>
+
                         </StackPanel>
-                        <Button x:ConnectionId='1' HorizontalAlignment="Center" Content="Daftar"                     ></Button>
+                    </Grid>
+
+                </ScrollViewer>
+            </StackPanel>
                         
-                    </StackPanel>
-                </Grid>
-                
-            </ScrollViewer>            
         </Grid>
     </Grid>
 </Page>

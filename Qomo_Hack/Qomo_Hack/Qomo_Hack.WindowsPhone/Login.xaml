@@ -8,28 +8,36 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    
     <Grid x:Name="LayoutRoot">
 
+        
+            
+        
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
 
-        <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <!--<TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>-->
-            <TextBlock Text="QOMO" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        <StackPanel>
+            <Grid Height="100" VerticalAlignment="Top" Background="#81CFE0"></Grid>
+            <Grid Height="700" Background="#ECF0F1"></Grid>
         </StackPanel>
 
+        <!-- Title Panel -->
+        
+        
+
         <!--TODO: Content should be placed within the following grid-->
-        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0" >
             <StackPanel>
+<<<<<<< HEAD
                 <TextBlock Text="Masuk" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
                 <TextBlock Text="Email" FontSize="20"></TextBlock>
 
@@ -47,6 +55,23 @@
                 <TextBlock Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10" Tapped="signup_tap"></TextBlock>                
                 <TextBlock Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25" Tapped="forgot_tap"></TextBlock>
 
+=======
+                <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                    <!--<TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>-->
+                    <TextBlock Text="QOMO" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+                </StackPanel>
+                
+                <StackPanel>
+                    <TextBlock Text="Masuk" Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
+                    <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>                   
+                    <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
+                    <TextBlock Foreground="Black" Text="Kata Sandi" FontSize="20" ></TextBlock>
+                    <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
+                    <Button Foreground="Black" BorderBrush="Black" HorizontalAlignment="Center" Content="Masuk" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>
+                    <TextBlock Foreground="Black" Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10" Tapped="signup_tap"></TextBlock>
+                    <TextBlock Foreground="Black" Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25" Tapped="forgot_tap"></TextBlock>
+                </StackPanel>
+>>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
             </StackPanel>
         </Grid>
     </Grid>

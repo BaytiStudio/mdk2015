@@ -11,7 +11,16 @@
             <h5>Provinsi</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="Jakarta" class="form-control">
+            <!-- <input type="text" name="" value="" placeholder="Jakarta" class="form-control"> -->
+            <select name="prop" id="prop" onchange="ajaxkota(this.value)">
+              <option value="">Pilih Provinsi</option>
+              <?php 
+              $queryProvinsi=mysql_query("SELECT * FROM inf_lokasi where lokasi_kabupatenkota=0 and lokasi_kecamatan=0 and lokasi_kelurahan=0 order by lokasi_nama");
+              while ($dataProvinsi=mysql_fetch_array($queryProvinsi)){
+                echo '<option value="'.$dataProvinsi['lokasi_propinsi'].'">'.$dataProvinsi['lokasi_nama'].'</option>';
+              }
+              ?>
+            </select>
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -19,7 +28,10 @@
             <h5>Kota/Kabupaten</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="Jakarta Selatan" class="form-control">
+            <!-- <input type="text" name="" value="" placeholder="Jakarta Selatan" class="form-control"> -->
+            <select name="kota" id="kota" onchange="ajaxkec(this.value)">
+              <option value="">Pilih Kota</option>
+            </select>
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -27,7 +39,10 @@
             <h5>Kecamatan</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="Cilandak" class="form-control">
+            <!-- <input type="text" name="" value="" placeholder="Cilandak" class="form-control"> -->
+            <select name="kec" id="kec" onchange="ajaxkel(this.value)">
+              <option value="">Pilih Kecamatan</option>
+            </select>
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -35,7 +50,10 @@
             <h5>Pasar</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="apa aja" class="form-control">
+            <!-- <input type="text" name="" value="" placeholder="apa aja" class="form-control"> -->
+            <select name="kel" id="kel">
+              <option value="">Pilih Kelurahan/Desa</option>
+            </select>
           </td>
         </tr>
         <tr class="form-horizontal">

@@ -13,11 +13,15 @@
         <tr>
           <h3>harga kemarin</h3>
         </tr>
-
         <tr>
-      <h3>harga sekarang</h3>
-    </tr>
-
+          <h3>5000</h3>
+        </tr>
+        <tr>
+          <h3>harga sekarang</h3>
+        </tr>
+        <tr>
+          <h3>5500</h3>
+        </tr>
       </table>
 
     </div>

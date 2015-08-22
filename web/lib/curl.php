@@ -2,7 +2,9 @@
 
 	function bacaHTML($url){
 	    // inisialisasi CURL
+		ini_set('MAX_EXECUTION_TIME', 0);
 	    $data = curl_init();
+
 	    // setting CURL
 	    curl_setopt($data, CURLOPT_RETURNTRANSFER, 1);
 	    curl_setopt($data, CURLOPT_URL, $url);

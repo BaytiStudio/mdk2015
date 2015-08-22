@@ -1,1 +1,1 @@
-C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Qomo_Hack.WindowsPhone.csproj;neutral
+C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Qomo_Hack.WindowsPhone.csproj;neutral

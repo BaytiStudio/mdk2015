@@ -156,6 +156,7 @@ namespace Qomo_Hack
             //}
 
             else
+            //if (strStatus == "1")
             {
                 //MessageBox.Show(e.Result.ToString());
                 //NavigationService.Navigate(new Uri("/DetailPage.xaml?sMemberID=" + strMemberID, UriKind.Relative));
@@ -175,7 +176,12 @@ namespace Qomo_Hack
                     //Logic login, ambil data dari database
             //}
 
+<<<<<<< HEAD
            
+=======
+            
+
+>>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
         }
             
         

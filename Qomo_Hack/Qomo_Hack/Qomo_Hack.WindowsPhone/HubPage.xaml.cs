@@ -39,6 +39,8 @@ namespace Qomo_Hack
         {
             this.InitializeComponent();
 
+            
+
             // Hub is only supported in Portrait orientation
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
 
@@ -199,6 +201,14 @@ namespace Qomo_Hack
         private void about_tap(object sender, TappedRoutedEventArgs e)
         {
            Frame.Navigate(typeof(About));
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            //await Windows.UI.ViewManagement.StatusBar.GetForCurrentView().HideAsync();
+
+            //Show the status bar
+            //await statusBar.ShowAsync();
         }
     }
 }
