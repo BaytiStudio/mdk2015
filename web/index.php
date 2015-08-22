@@ -1,3 +1,6 @@
+<?php
+  include_once 'lib/curl.php';
+ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -68,6 +71,7 @@
               </ul>
 
             </li>
+            <li><a href="?module=signup">SignUp</a></li>
 
                                 <li style="margin-top:23px;margin-right:20px;">
                                   <form class="" action="" method="post" role="search">
@@ -84,8 +88,14 @@
                     </div>
 
 				        </div>
-								<?php
-                include 'data.php';
+								<?php  if (isset($_GET['module'])) {
+                    include "$_GET[module].php";
+                    # code...
+                  }
+                  else {
+                    # code...
+                    include "data.php";
+                  }
                  ?>
     </div>
 

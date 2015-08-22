@@ -32,14 +32,15 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                               </button>
-                              <a class="navbar-brand" href="home.php">Qomo</a>
+                              <a class="navbar-brand" href="admin.php">Qomo</a>
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                               <ul class="nav navbar-nav">
-                                <li><a href="home.php">Home</a></li>
-                                <li><a href="?module=lapor">Lapor</a></li>
+                                <li><a href="admin.php">Home</a></li>
+                                <li><a href="?module=sentimen">Sentimen</a></li>
+                                <li><a href="?module=lapor">Laporan</a></li>
                                 <li><a href="?module=profil">Profil</a></li>
                                 <li><a href="../about.php">About</a></li>
                               </ul>
@@ -64,7 +65,7 @@
 				        </div>
                 <?php
                 if (isset($_GET['module'])) {
-                  include "../user/$_GET[module].php";
+                  include "../admin/$_GET[module].php";
                   # code...
                 }
                 else {
