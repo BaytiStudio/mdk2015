@@ -14,6 +14,6 @@
 			VALUES ('$pasar','$komoditas','jenis_komoditas','$provinsi','$kota','$kecamatan','$kelurahan',$harga,now())";
 	mysql_query($sql)or die(mysql_error());
 	echo "<script>
-				window.location.href='../user/index.php';
+				window.location.href='../user/home.php';
 			</script>";
  ?>
