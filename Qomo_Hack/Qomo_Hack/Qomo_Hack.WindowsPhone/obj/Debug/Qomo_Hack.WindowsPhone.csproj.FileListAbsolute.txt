@@ -95,3 +95,8 @@ C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Wind
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Signup.g.cs
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Signup.xaml
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Signup.xbf
+C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Lapor.xbf
+C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Lapor.g.i.cs
+C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Lapor.g.cs
+C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Lapor.xaml
+C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Lapor.xbf

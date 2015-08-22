@@ -48,7 +48,7 @@
                             <RadioButton Content="Konsumen" Name="konsumen"></RadioButton>
                         </StackPanel>
                         <Button x:ConnectionId='1' HorizontalAlignment="Center" Content="Daftar"                     ></Button>
-                        <Button></Button>
+                        
                     </StackPanel>
                 </Grid>
                 

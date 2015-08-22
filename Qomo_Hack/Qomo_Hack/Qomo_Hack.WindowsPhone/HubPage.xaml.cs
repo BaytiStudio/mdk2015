@@ -154,5 +154,10 @@ namespace Qomo_Hack
         {
             Frame.Navigate(typeof(Login));
         }
+
+        private void lapor(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Lapor));
+        }
     }
 }
