@@ -37,9 +37,9 @@
                         <TextBlock Text="No. Identitas (KTP/SIM)" FontSize="20"></TextBlock>
                         <TextBox InputScope="Number" PlaceholderText="No. Identitas" Name="id_num"></TextBox>
                         <TextBlock Text="Email" FontSize="20"></TextBlock>
-                        <TextBox InputScope="EmailSmtpAddress" PlaceholderText="Email Address" Name="email"></TextBox>
-                        <TextBlock Text="Password" FontSize="20"></TextBlock>
-                        <PasswordBox PlaceholderText="Password" Name="pass"></PasswordBox>
+                        <TextBox InputScope="EmailSmtpAddress" PlaceholderText="Alamat Email" Name="email"></TextBox>
+                        <TextBlock Text="Kata Sandi" FontSize="20"></TextBlock>
+                        <PasswordBox PlaceholderText="Kata Sandi" Name="pass"></PasswordBox>
                         <TextBlock Text="Daftar Sebagai" FontSize="20"></TextBlock>
 
                         <StackPanel Orientation="Vertical">

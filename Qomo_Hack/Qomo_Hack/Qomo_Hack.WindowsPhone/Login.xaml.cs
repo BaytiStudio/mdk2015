@@ -110,7 +110,11 @@ namespace Qomo_Hack
 
         private void login_tap(object sender, TappedRoutedEventArgs e)
         {
+            //{
+                    //Logic login, ambil data dari database
+            //}
 
+            Frame.Navigate(typeof(HubPage));
         }
 
         private void signup_tap(object sender, TappedRoutedEventArgs e)
@@ -123,7 +127,7 @@ namespace Qomo_Hack
 
         private void forgot_tap(object sender, TappedRoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(Forgot));
         }
     }
 }
