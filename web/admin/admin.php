@@ -42,7 +42,7 @@
                                 <li><a href="?module=sentimen">Sentimen</a></li>
                                 <li><a href="?module=lapor">Laporan</a></li>
                                 <li><a href="?module=profil">Profil</a></li>
-                                <li><a href="../about.php">About</a></li>
+                                <li><a href="?module=about">About</a></li>
                               </ul>
                               <ul class="nav navbar-nav navbar-right">
 
