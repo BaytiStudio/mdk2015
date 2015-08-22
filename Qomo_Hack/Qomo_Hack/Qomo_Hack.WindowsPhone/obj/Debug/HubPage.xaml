@@ -74,10 +74,10 @@
 
         <!--<Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
-=======
+
         <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="HOME" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
->>>>>>> 278cf3cfedf1bee61a5953b95872990ddd018ed1
+
                 <DataTemplate>
                     <ListView
                         ItemsSource="{Binding}"
@@ -189,6 +189,7 @@
                                             <TextBlock Text="-" FontSize="20" Margin="0,0,5,0"></TextBlock>
                                             <TextBlock x:Name="nasional" Text="Nasional" FontSize="20" Margin="0,0,5,0"></TextBlock>
                                         </StackPanel>
+                                        
                                         <Grid>
                                             <StackPanel Orientation="Horizontal">
                                                 <TextBlock Text="Rp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="110" Margin="0,0,10,0"></TextBlock>                                   
@@ -223,23 +224,17 @@
                                                             </TransformGroup>
                                                         </Path.RenderTransform>
                                                     </Path>
-                                                </Grid>
-
+                                                </Grid> 
                                                 
-                                            </StackPanel>
-                                            
-                                        </Grid>
-                                        
-                                        
-                                    </StackPanel>
-                                    
-
+                                            </StackPanel>                                           
+                                        </Grid>                                      
+                                    </StackPanel>                                  
                                 </Grid>
-                            </StackPanel>
-                           
-                            
+                            </StackPanel>                                                    
                         </Grid>
+                        <Button x:ConnectionId='1' Content="login"            ></Button>
                     </StackPanel>
+                    
                 </Grid>
             </PivotItem>
             
