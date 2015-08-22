@@ -88,4 +88,5 @@
 	<script src="../assets/js/get-shit-done.js"></script>
 
     <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/ajax_kota.js"></script>
 </html>

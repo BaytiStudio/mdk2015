@@ -9,4 +9,7 @@
 	$sql = "INSERT INTO user (no_identitas, email, nama, password, level, created_at)
 		 VALUES ($no,'$email','$nama','$password','$level',now())";
 	mysql_query($sql)or die(mysql_error());
+	echo "<script>
+				window.location.href='../index.php';
+			</script>";
  ?>

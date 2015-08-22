@@ -48,20 +48,20 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
 
               <ul class="dropdown-menu">
-								<form class="" action="" method="post" style="padding:10px;">
+								<form class="" action="db/cekLogin.php" method="post" style="padding:10px;">
 									<li>
-										<h6> username</h6>
+										<h6> email</h6>
 
 									</li>
 									<li>
-										<input type="text" name="name" value="" placeholder="username">
+										<input type="text" name="email" value="" placeholder="email">
 									</li>
 									<li>
 										<h6> password</h6>
 
 									</li>
 									<li>
-										<input type="password" name="name" value="">
+										<input type="password" name="pass" value="">
 									</li>
 									<li>
 										<button type="submit" name="button" class="btn btn-primary btn-xs">Login</button>
@@ -109,7 +109,7 @@
 	<script src="assets/js/gsdk-checkbox.js"></script>
 	<script src="assets/js/gsdk-radio.js"></script>
 	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
-	<script src="assets/js/get-shit-done.js"></script>
+  <script src="assets/js/get-shit-done.js"></script>
 
     <script src="assets/js/custom.js"></script>
 </html>
