@@ -30,14 +30,23 @@
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
-                <TextBlock Text="Sign In" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
+                <TextBlock Text="Masuk" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
                 <TextBlock Text="Email" FontSize="20"></TextBlock>
+<<<<<<< HEAD
                 <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Type your registered email"></TextBox>
                 <TextBlock Text="Password" FontSize="20" ></TextBlock>
                 <PasswordBox PlaceholderText="Your account password" Name="password"></PasswordBox>
                 <Button x:ConnectionId='1' x:Name="btnlogin" HorizontalAlignment="Center" Content="Login"                    FontSize="25" Margin="0,0,0,20"></Button>
                 <TextBlock x:ConnectionId='2' Text="Sign Up" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>                
                 <TextBlock x:ConnectionId='3' Text="Forgot Password" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
+=======
+                <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
+                <TextBlock Text="Kata Sandi" FontSize="20" ></TextBlock>
+                <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
+                <Button x:ConnectionId='1' HorizontalAlignment="Center" Content="Masuk"                    FontSize="25" Margin="0,0,0,20"></Button>
+                <TextBlock x:ConnectionId='2' Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>                
+                <TextBlock x:ConnectionId='3' Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
+>>>>>>> 4f1459fce94be12d12d194ff7caa23dec76f3100
             </StackPanel>
         </Grid>
     </Grid>

@@ -23,12 +23,12 @@ namespace Qomo_Hack
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Signup : Page
+    public sealed partial class Forgot : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public Signup()
+        public Forgot()
         {
             this.InitializeComponent();
 
@@ -107,14 +107,5 @@ namespace Qomo_Hack
         }
 
         #endregion
-
-        private void signup_click(object sender, RoutedEventArgs e)
-        {
-            //{
-                    //Logic sign up, masuk ke database web
-            //}
-
-            Frame.Navigate(typeof(Login));
-        }
     }
 }

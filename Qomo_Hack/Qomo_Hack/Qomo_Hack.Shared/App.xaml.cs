@@ -63,6 +63,7 @@ namespace Qomo_Hack
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
+                //rootFrame.Navigate(typeof(Login)); //tambah
 
                 //Associate the frame with a SuspensionManager key                                
                 SuspensionManager.RegisterFrame(rootFrame, "AppFrame");
@@ -86,6 +87,7 @@ namespace Qomo_Hack
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
+                //Window.Current.Activate(); //tambah
             }
 
             if (rootFrame.Content == null)
@@ -108,7 +110,7 @@ namespace Qomo_Hack
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(HubPage), e.Arguments))
+                if (!rootFrame.Navigate(typeof(Login), e.Arguments))
                 {
                     throw new Exception("Failed to create initial page");
                 }
