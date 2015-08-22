@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
+<Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="DefaultViewModel" />
     <RootPropertyPathName Name="Subtitle" />
@@ -142,6 +142,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Qomo_Hack.Login" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
@@ -160,5 +161,13 @@
     </RootType>
     <RootType FullName="Qomo_Hack.SectionPage" />
     <RootType FullName="Qomo_Hack.ItemPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Qomo_Hack.Signup" />
   </Roots.RootTypes>
 </Roots>

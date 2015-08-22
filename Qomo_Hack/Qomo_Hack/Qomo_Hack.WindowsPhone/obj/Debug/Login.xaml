@@ -30,6 +30,7 @@
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
+                <TextBlock Text="Sign In" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
                 <TextBlock Text="Email" FontSize="20"></TextBlock>
                 <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Type your registered email"></TextBox>
                 <TextBlock Text="Password" FontSize="20" ></TextBlock>
