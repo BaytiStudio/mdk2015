@@ -16,40 +16,50 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
+
+        <StackPanel>
+            <Grid Height="100" VerticalAlignment="Top" Background="#81CFE0"></Grid>
+            <Grid Height="700" Background="#ECF0F1"></Grid>
+        </StackPanel>
 
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="PROFILE" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <!--<TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>-->
-        </StackPanel>
+        
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
-                <Image Height="125" Width="125" Source="/Assets/LightGray.png"></Image>
-                <TextBlock Name="nama_lkp" Text="Mochamad Tri Dharmawan" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold"></TextBlock>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                    <TextBlock Text="XP" FontSize="20" Margin="0,0,10,0"></TextBlock>
-                    <TextBlock Name="xp" Text="100" FontSize="20" Margin="0,0,10,0" FontWeight="Bold"></TextBlock>
-                    <TextBlock Text="Pts" FontSize="20" Margin="0,0,10,0"></TextBlock>
-                    <TextBlock Name="pts" Text="50" FontSize="20" Margin="0,0,10,0" FontWeight="Bold"></TextBlock>
+                <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                    <TextBlock Text="PROFILE" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+                    <!--<TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>-->
                 </StackPanel>
-                <TextBlock Text="Email" FontSize="20"></TextBlock>
-                <TextBlock Name="email" Text="wawanmtd@outlook.com" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
-                <TextBlock Text="No. Identitas (KTP/SIM)" FontSize="20"></TextBlock>
-                <TextBlock Name="no_identitas" Text="3674061803950005" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
-                <TextBlock Text="Terdaftar Sebagai" FontSize="20"></TextBlock>
-                <TextBlock Name="daftar_sbg" Text="Produsen" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
-                <TextBlock Text="Tanggal Lahir" FontSize="20"></TextBlock>
-                <TextBlock Name="tgl_lhr" Text="18/03/1995" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
-                <TextBlock Text="Alamat" FontSize="20"></TextBlock>
-                <TextBlock Name="alamat" Text="Jl. Benda Barat 14" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
-                
+
+                <StackPanel>
+                    <Image Height="125" Width="125" Source="/Assets/LightGray.png"></Image>
+                    <TextBlock Foreground="Black" Name="nama_lkp" Text="Mochamad Tri Dharmawan" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold"></TextBlock>
+                    <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                        <TextBlock Foreground="Black" Text="XP" FontSize="20" Margin="0,0,10,0"></TextBlock>
+                        <TextBlock Foreground="Black" Name="xp" Text="100" FontSize="20" Margin="0,0,10,0" FontWeight="Bold"></TextBlock>
+                        <TextBlock Foreground="Black" Text="Pts" FontSize="20" Margin="0,0,10,0"></TextBlock>
+                        <TextBlock Foreground="Black" Name="pts" Text="50" FontSize="20" Margin="0,0,10,0" FontWeight="Bold"></TextBlock>
+                    </StackPanel>
+                    <TextBlock Foreground="Black" Text="Email" FontSize="20"></TextBlock>
+                    <TextBlock Foreground="Black" Name="email" Text="wawanmtd@outlook.com" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
+                    <TextBlock Foreground="Black" Text="No. Identitas (KTP/SIM)" FontSize="20"></TextBlock>
+                    <TextBlock Foreground="Black" Name="no_identitas" Text="3674061803950005" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
+                    <TextBlock Foreground="Black" Text="Terdaftar Sebagai" FontSize="20"></TextBlock>
+                    <TextBlock Foreground="Black" Name="daftar_sbg" Text="Produsen" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
+                    <TextBlock Foreground="Black" Text="Tanggal Lahir" FontSize="20"></TextBlock>
+                    <TextBlock Foreground="Black" Name="tgl_lhr" Text="18/03/1995" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
+                    <TextBlock Foreground="Black" Text="Alamat" FontSize="20"></TextBlock>
+                    <TextBlock Foreground="Black" Name="alamat" Text="Jl. Benda Barat 14" FontSize="20" Margin="10,0,0,10" FontWeight="Bold"></TextBlock>
+
+                </StackPanel>
             </StackPanel>
+            
             
             
         </Grid>

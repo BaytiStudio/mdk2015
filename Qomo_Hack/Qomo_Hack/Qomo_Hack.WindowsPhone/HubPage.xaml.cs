@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Net;
+using System.Net.NetworkInformation;
 using Windows.ApplicationModel.Resources;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -20,6 +22,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+using TweetSharp;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -189,10 +193,33 @@ namespace Qomo_Hack
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            //await Windows.UI.ViewManagement.StatusBar.GetForCurrentView().HideAsync();
+            if (Frame.CanGoBack)
+            {
+                ((Frame)Window.Current.Content).BackStack.Clear();
+            }
 
-            //Show the status bar
-            //await statusBar.ShowAsync();
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                //Obtain keys by registering your app on https://dev.twitter.com/apps
+                var service = new TwitterService("SEuJKVyiLrpntSmX76mLLK5rV", "2oLc3FgsOC1heh6vyiKlBXDWKnLo2dO9UAgHDxgS6WPnwbh2Rq");
+                service.AuthenticateWith("197426566-jB7G6TbKGPVHS84rQ2LezVyZp2WJxR5kabaR5sHN", "ntb1049lvRbdX0k5aZkxlWeEvbAZtZm35ekazZnlwBj05");
+
+                //ScreenName is the profile name of the twitter user.
+                service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions() { ScreenName = "OfficialiNewsTV  " }, (ts, rep) =>
+                {
+                    if (rep.StatusCode == HttpStatusCode.OK)
+                    {
+                        //bind
+                        this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { tweetList.ItemsSource = ts; } );
+                    }
+                });
+            }
+            else
+            {
+
+                var dialog = new MessageDialog ("Please check your internet connestion.").ShowAsync();
+                
+            }
         }
     }
 }

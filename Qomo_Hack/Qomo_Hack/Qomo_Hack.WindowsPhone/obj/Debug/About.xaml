@@ -16,33 +16,44 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
+
+        <StackPanel>
+            <Grid Height="100" VerticalAlignment="Top" Background="#81CFE0"></Grid>
+            <Grid Height="700" Background="#ECF0F1"></Grid>
+        </StackPanel>
+
 
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <!--<TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>-->
-            <TextBlock Text="Tentang" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-        </StackPanel>
+        
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
-                <TextBlock Text="QOMO" FontSize="35" FontWeight="Bold"></TextBlock>
-                <TextBlock Text="v.1.0" FontSize="20"></TextBlock>
-                <TextBlock TextWrapping="Wrap" Text="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini."
+                <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                    <!--<TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>-->
+                    <TextBlock Text="Tentang" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="QOMO" FontSize="35" FontWeight="Bold"></TextBlock>
+                    <TextBlock Foreground="Black" Text="v.1.0" FontSize="20"></TextBlock>
+                    <TextBlock Foreground="Black" TextWrapping="Wrap" Text="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini."
                            FontSize="17" Margin="0,10,0,0"></TextBlock>
-                <HyperlinkButton x:ConnectionId='1' Content="rate us" FontSize="20" Margin="0,10,0,0" Foreground="Gold"                ></HyperlinkButton>
-                
-            </StackPanel>
-            <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,10">
-                <Image Source="/Assets/logo bayti.png" Height="70" Width="70" HorizontalAlignment="Left" ></Image>    
-                <TextBlock Text="Copyright (c) 2015" FontSize="15"></TextBlock>
-                <TextBlock Text="Bayti Studio" FontSize="15"></TextBlock>
+                    <HyperlinkButton x:ConnectionId='1' Content="rate us" FontSize="20" Margin="0,10,0,0" Foreground="Gold"                ></HyperlinkButton>
+
+                </StackPanel>                
             </StackPanel>
             
+            <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,10">
+                <Image Source="/Assets/logo bayti.png" Height="70" Width="70" HorizontalAlignment="Left" ></Image>
+                <TextBlock Foreground="Black" Text="Copyright (c) 2015" FontSize="15"></TextBlock>
+                <TextBlock Foreground="Black" Text="Bayti Studio" FontSize="15"></TextBlock>
+            </StackPanel>
+
         </Grid>
     </Grid>
 </Page>

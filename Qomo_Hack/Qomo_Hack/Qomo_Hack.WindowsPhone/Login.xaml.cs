@@ -189,5 +189,18 @@ namespace Qomo_Hack
         {
             Frame.Navigate(typeof(Forgot));
         }
+
+        private void about(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(About));
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                ((Frame)Window.Current.Content).BackStack.Clear();
+            }
+        }
     }
 }

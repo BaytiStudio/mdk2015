@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="Qomo_Hack.Login"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"                     >
 
     
     <Grid x:Name="LayoutRoot">
@@ -45,15 +45,21 @@
                 <StackPanel>
                     <TextBlock Text="Masuk" Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
                     <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>                   
-                    <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
+                    <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan Email anda"></TextBox>
                     <TextBlock Foreground="Black" Text="Kata Sandi" FontSize="20" ></TextBlock>
                     <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
-                    <Button x:ConnectionId='1' Foreground="Black" BorderBrush="Black" HorizontalAlignment="Center" Content="Masuk"                    FontSize="25" Margin="0,0,0,20"></Button>
-                    <TextBlock x:ConnectionId='2' Foreground="Black" Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>
-                    <TextBlock x:ConnectionId='3' Foreground="Black" Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
+                    <Button x:ConnectionId='2' Foreground="Black" BorderBrush="Black" HorizontalAlignment="Center" Content="Masuk"                    FontSize="25" Margin="0,0,0,20"></Button>
+                    <TextBlock x:ConnectionId='3' Foreground="Black" Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>
+                    <TextBlock x:ConnectionId='4' Foreground="Black" Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
                 </StackPanel>
             </StackPanel>
         </Grid>
     </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='5' Icon="Help" Label="about"              ></AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>
 

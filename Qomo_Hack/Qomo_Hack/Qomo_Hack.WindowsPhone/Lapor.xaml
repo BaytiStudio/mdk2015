@@ -16,67 +16,81 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
+        <StackPanel>
+            <Grid Height="100" VerticalAlignment="Top" Background="#81CFE0"></Grid>
+            <Grid Height="700" Background="#ECF0F1"></Grid>
+        </StackPanel>
 
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="Lapor Harga" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-        </StackPanel>
+        
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <ScrollViewer>
-                <StackPanel>
-                    <Button Content="Get Location" FontSize="25" HorizontalAlignment="Center" Tapped="getLoc"></Button>
-                    
-                    <StackPanel Orientation="Horizontal" x:Name="prov" Visibility="Collapsed">
-                        <TextBlock Text="Provinsi : " FontSize="20" Margin="0,0,5,0"></TextBlock>    
-                        <TextBlock Text="Banten" Name="provinsi" FontSize="20" FontWeight="Bold"></TextBlock>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" x:Name="kota" Visibility="Collapsed">
-                        <TextBlock Text="Kab/Kota : " FontSize="20" Margin="0,0,5,0"></TextBlock>
-                        <TextBlock Text="Tangerang Selatan" Name="kabkota" FontSize="20" FontWeight="Bold"></TextBlock>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" x:Name="kec" Visibility="Collapsed">
-                        <TextBlock Text="Kecamatan : " FontSize="20" Margin="0,0,5,0"></TextBlock>
-                        <TextBlock Text="Ciputat" Name="kecamatan" FontSize="20" FontWeight="Bold"></TextBlock>
-                    </StackPanel>
-
-
-                    <ComboBox ItemsSource="{Binding Items}" Margin="0,10,0,0">
-                        <ComboBox.Header>
-                            <TextBlock Text="Komoditas" FontSize="17"></TextBlock>
-                        </ComboBox.Header>
-                        <!--Class Bindingnya blm bener-->
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Name}"/>
-                                <!--Text nya blm bener-->
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
-                    </ComboBox>
-
-                    <TextBlock Text="Jenis" FontSize="17"></TextBlock>
-                    <TextBox Name="jenis_kom" PlaceholderText="Jenis"></TextBox>
-                    <TextBlock Text="Lapor Sebagai" FontSize="17"></TextBlock>
-                    <StackPanel Orientation="Horizontal">
-                        <RadioButton Content="Produsen" Name="produsen" Visibility="Visible"></RadioButton>
-                        <RadioButton Content="Distributor" Name="distributor" Visibility="Collapsed"></RadioButton>
-                        <RadioButton Content="Konsumen" Name="konsumen" Visibility="Visible"></RadioButton>
-                    </StackPanel>
-                    <TextBlock Text="Harga" FontSize="17"></TextBlock>
-                    <TextBox PlaceholderText="Harga Komoditas /kg" InputScope="Number" Name="hrg_kom"></TextBox>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button Content="Tweet" Click="tweet_click" Margin="0,0,10,0"></Button>
-                        <Button Content="SMS" Click="sms_click"></Button>
-                    </StackPanel>
+            <StackPanel>
+                <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                    <TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,0,0,0"/>
+                    <TextBlock Text="Lapor Harga" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
                 </StackPanel>
-            </ScrollViewer>
-            
+
+                <ScrollViewer>
+                    <StackPanel>
+                        <Button Content="Get Location" Foreground="Black" BorderBrush="Black" FontSize="25" HorizontalAlignment="Center" Tapped="getLoc"></Button>
+
+                        <StackPanel Orientation="Horizontal" x:Name="prov" Visibility="Collapsed">
+                            <TextBlock Foreground="Black" Text="Provinsi : " FontSize="20" Margin="0,0,5,0"></TextBlock>
+                            <TextBlock Foreground="Black" Text="Banten" Name="provinsi" FontSize="20" FontWeight="Bold"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" x:Name="kota" Visibility="Collapsed">
+                            <TextBlock Foreground="Black" Text="Kab/Kota : " FontSize="20" Margin="0,0,5,0"></TextBlock>
+                            <TextBlock Foreground="Black" Text="Tangerang Selatan" Name="kabkota" FontSize="20" FontWeight="Bold"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" x:Name="kec" Visibility="Collapsed">
+                            <TextBlock Foreground="Black" Text="Kecamatan : " FontSize="20" Margin="0,0,5,0"></TextBlock>
+                            <TextBlock Foreground="Black" Text="Ciputat" Name="kecamatan" FontSize="20" FontWeight="Bold"></TextBlock>
+                        </StackPanel>
+
+
+                        <ComboBox BorderBrush="Black" Foreground="Black" x:Name="komoditas" SelectionChanged="komoditas_SelectionChanged" Margin="0,10,0,0">
+                            <ComboBox.Header>
+                                <TextBlock Foreground="Black" Text="Komoditas" FontSize="17"></TextBlock>
+                            </ComboBox.Header>
+                            <!--Class Bindingnya blm bener-->
+                            
+                            <!--<ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"/>
+                                    --><!--Text nya blm bener--><!--
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>-->
+                            
+                            <x:String>Beras</x:String>
+                            <x:String>Daging</x:String>
+                            <x:String>Gula</x:String>
+                        </ComboBox>
+
+                        <TextBlock Foreground="Black" Text="Jenis" FontSize="17"></TextBlock>
+                        <TextBox Name="jenis_kom" PlaceholderText="Jenis"></TextBox>
+                        <TextBlock Foreground="Black" Text="Lapor Sebagai" FontSize="17"></TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Produsen" Name="produsen" Visibility="Visible"></RadioButton>
+                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Distributor" Name="distributor" Visibility="Collapsed"></RadioButton>
+                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Konsumen" Name="konsumen" Visibility="Visible"></RadioButton>
+                        </StackPanel>
+                        <TextBlock Foreground="Black" Text="Harga" FontSize="17"></TextBlock>
+                        <TextBox PlaceholderText="Harga Komoditas /kg" InputScope="Number" Name="hrg_kom"></TextBox>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Foreground="Black" BorderBrush="Black" Content="Tweet" Click="tweet_click" Margin="0,0,10,0"></Button>
+                            <Button Foreground="Black" BorderBrush="Black" Content="SMS" Click="sms_click"></Button>
+                        </StackPanel>
+                        <Button Content="Sign In Twitter" Foreground="Black" Click="signin"></Button>
+                        <TextBlock x:Name="_statusTextBlock" />
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>       
             
         </Grid>
     </Grid>
