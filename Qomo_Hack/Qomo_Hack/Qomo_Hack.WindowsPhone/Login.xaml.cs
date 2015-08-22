@@ -124,7 +124,7 @@ namespace Qomo_Hack
 
         private async void login_tap(object sender, TappedRoutedEventArgs e)
         {
-<<<<<<< HEAD
+
             Uri uri = new Uri("http://antakusuma.hol.es/wp/login.php", UriKind.Absolute);
             Dictionary<string, string> pairs = new Dictionary<string, string>();
             pairs.Add("sUsername", email.Text);
@@ -156,19 +156,21 @@ namespace Qomo_Hack
             //}
 
             else
+            //if (strStatus == "1")
             {
                 //MessageBox.Show(e.Result.ToString());
                 //NavigationService.Navigate(new Uri("/DetailPage.xaml?sMemberID=" + strMemberID, UriKind.Relative));
                 //MessageBox.Show("berhasil");
                 var dialog = new MessageDialog("SELAMAT ANDA BERHASIL").ShowAsync();
+                Frame.Navigate(typeof(HubPage));
             }
-=======
+
             //{
                     //Logic login, ambil data dari database
             //}
 
-            Frame.Navigate(typeof(HubPage));
->>>>>>> 4f1459fce94be12d12d194ff7caa23dec76f3100
+            
+
         }
             
         
