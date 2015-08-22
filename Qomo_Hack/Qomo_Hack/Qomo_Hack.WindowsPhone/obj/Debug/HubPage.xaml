@@ -71,7 +71,6 @@
     </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
-<<<<<<< HEAD
 
         <!--<Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
@@ -79,15 +78,6 @@
         <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="HOME" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
 >>>>>>> 278cf3cfedf1bee61a5953b95872990ddd018ed1
-=======
-<<<<<<< HEAD
-        <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
-            <HubSection x:Uid="HubSection1" Header="HOME" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
-=======
-        <!--<Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
-            <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
->>>>>>> 177656bba7f133b9c71c8b615ace909b03e77390
->>>>>>> 917bf3de119e07e32b5b25ea49e3e833bd629ed2
                 <DataTemplate>
                     <ListView
                         ItemsSource="{Binding}"
