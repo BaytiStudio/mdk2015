@@ -1,7 +1,7 @@
     var ajaxku;
 function ajaxkota(id){
     ajaxku = buatajax();
-    var url="ajax/select_kota.php";
+    var url="../db/select_kota.php";
     url=url+"?q="+id;
     url=url+"&sid="+Math.random();
     ajaxku.onreadystatechange=stateChanged;
@@ -11,7 +11,7 @@ function ajaxkota(id){
 
 function ajaxkec(id){
     ajaxku = buatajax();
-    var url="ajax/select_kota.php";
+    var url="../db/select_kota.php";
     url=url+"?kec="+id;
     url=url+"&sid="+Math.random();
     ajaxku.onreadystatechange=stateChangedKec;
@@ -21,7 +21,7 @@ function ajaxkec(id){
 
 function ajaxkel(id){
     ajaxku = buatajax();
-    var url="ajax/select_kota.php";
+    var url="../db/select_kota.php";
     url=url+"?kel="+id;
     url=url+"&sid="+Math.random();
     ajaxku.onreadystatechange=stateChangedKel;

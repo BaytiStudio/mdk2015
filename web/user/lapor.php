@@ -1,6 +1,6 @@
 <div class="container">
   <h2 class="text-center">Lapor Harga Barang</h2>
-  <form class="" action="" method="post">
+  <form class="" action="../db/lapor.php" method="post">
     <div class="row">
     <div class="form-group">
       <div class="col-md-4">
@@ -15,7 +15,7 @@
             <select name="prop" id="prop" onchange="ajaxkota(this.value)">
               <option value="">Pilih Provinsi</option>
               <?php 
-              $queryProvinsi=mysql_query("SELECT * FROM inf_lokasi where lokasi_kabupatenkota=0 and lokasi_kecamatan=0 and lokasi_kelurahan=0 order by lokasi_nama");
+              $queryProvinsi=mysql_query("SELECT * FROM inf_lokasi where lokasi_kabupatenkota=0 and lokasi_kecamatan=0 and lokasi_kelurahan=0");
               while ($dataProvinsi=mysql_fetch_array($queryProvinsi)){
                 echo '<option value="'.$dataProvinsi['lokasi_propinsi'].'">'.$dataProvinsi['lokasi_nama'].'</option>';
               }
@@ -47,7 +47,7 @@
         </tr>
         <tr class="form-horizontal">
           <td>
-            <h5>Pasar</h5>
+            <h5>Kelurahan</h5>
           </td>
           <td>
             <!-- <input type="text" name="" value="" placeholder="apa aja" class="form-control"> -->
@@ -58,10 +58,18 @@
         </tr>
         <tr class="form-horizontal">
           <td>
+            <h5>Pasar</h5>
+          </td>
+          <td>
+            <input type="text" name="nama_pasar" value="" placeholder="apa aja" class="form-control">
+          </td>
+        </tr>
+        <tr class="form-horizontal">
+          <td>
             <h5>Komoditas</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="Beras" class="form-control">
+            <input type="text" name="nama_komoditas" value="" placeholder="Beras" class="form-control">
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -69,7 +77,7 @@
             <h5>Jenis</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="Raskin" class="form-control">
+            <input type="text" name="jenis_komoditas" value="" placeholder="Raskin" class="form-control">
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -77,7 +85,7 @@
             <h5>Harga</h5>
           </td>
           <td>
-            <input type="text" name="" value="" placeholder="50000" class="form-control">
+            <input type="text" name="harga" value="" placeholder="50000" class="form-control">
           </td>
         </tr>
         <tr>
