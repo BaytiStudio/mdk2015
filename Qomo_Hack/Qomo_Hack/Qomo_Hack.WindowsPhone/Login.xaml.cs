@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -15,6 +17,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Qomo_Hack;
+using System.Threading;
+using System.Threading.Tasks;
+using Windows.Web.Http;
+using Windows.UI.Popups;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -28,6 +35,11 @@ namespace Qomo_Hack
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
+       // Login rootPage = Login.Current;
+
+        private HttpClient httpClient;
+        private CancellationTokenSource cts;
+
         public Login()
         {
             this.InitializeComponent();
@@ -36,6 +48,7 @@ namespace Qomo_Hack
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
+        
 
         /// <summary>
         /// Gets the <see cref="NavigationHelper"/> associated with this <see cref="Page"/>.
@@ -43,6 +56,7 @@ namespace Qomo_Hack
         public NavigationHelper NavigationHelper
         {
             get { return this.navigationHelper; }
+
         }
 
         /// <summary>
@@ -108,10 +122,48 @@ namespace Qomo_Hack
 
         #endregion
 
-        private void login_tap(object sender, TappedRoutedEventArgs e)
+        private async void login_tap(object sender, TappedRoutedEventArgs e)
         {
+            Uri uri = new Uri("http://antakusuma.hol.es/wp/login.php", UriKind.Absolute);
+            Dictionary<string, string> pairs = new Dictionary<string, string>();
+            pairs.Add("sUsername", email.Text);
+            pairs.Add("sPassword", password.Password.ToString());
+            HttpFormUrlEncodedContent formContent =
+                new HttpFormUrlEncodedContent(pairs);
 
+            HttpClient client = new HttpClient();
+            HttpResponseMessage response = await client.PostAsync(uri, formContent);
+            
+
+            string[] result = response.Content.ToString().Split('|');
+            string strStatus = result[0].ToString();
+            string strMemberID = result[1].ToString();
+            string strError = "Password salah";
+ 
+            if (strStatus == "0")
+            {
+                var dialog = new MessageDialog(strError).ShowAsync();
+                //MessageBox.Show(e.Result.ToString());
+                //MessageBox.Show(strError);
+
+
+            }
+
+            //else if (txtPassword.Password.ToString()=="")
+            //{
+            //    MessageBox.Show(strError);
+            //}
+
+            else
+            {
+                //MessageBox.Show(e.Result.ToString());
+                //NavigationService.Navigate(new Uri("/DetailPage.xaml?sMemberID=" + strMemberID, UriKind.Relative));
+                //MessageBox.Show("berhasil");
+                var dialog = new MessageDialog("SELAMAT ANDA BERHASIL").ShowAsync();
+            }
         }
+            
+        
 
         private void signup_tap(object sender, TappedRoutedEventArgs e)
         {
@@ -120,6 +172,8 @@ namespace Qomo_Hack
                 throw new Exception("NavigationFailedExceptionMessage");
             }
         }
+        
+        
 
         private void forgot_tap(object sender, TappedRoutedEventArgs e)
         {

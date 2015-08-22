@@ -35,7 +35,7 @@
                 <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Type your registered email"></TextBox>
                 <TextBlock Text="Password" FontSize="20" ></TextBlock>
                 <PasswordBox PlaceholderText="Your account password" Name="password"></PasswordBox>
-                <Button HorizontalAlignment="Center" Content="Login" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>
+                <Button x:Name="btnlogin" HorizontalAlignment="Center" Content="Login" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>
                 <TextBlock Text="Sign Up" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10" Tapped="signup_tap"></TextBlock>                
                 <TextBlock Text="Forgot Password" HorizontalAlignment="Center" FontSize="25" Tapped="forgot_tap"></TextBlock>
             </StackPanel>
