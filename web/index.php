@@ -1,3 +1,6 @@
+<?php 
+  include_once 'lib/curl.php';
+ ?>
 <!doctype html>
 <html lang="en">
 <head>
