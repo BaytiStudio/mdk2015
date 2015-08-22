@@ -71,8 +71,13 @@
     </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
+
+        <!--<Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
+            <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+=======
         <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
             <HubSection x:Uid="HubSection1" Header="HOME" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+>>>>>>> 278cf3cfedf1bee61a5953b95872990ddd018ed1
                 <DataTemplate>
                     <ListView
                         ItemsSource="{Binding}"
@@ -166,6 +171,87 @@
                     </ListView>
                 </DataTemplate>
             </HubSection>
-        </Hub>
+        </Hub>-->
+        
+        <Pivot>
+            <PivotItem Header="Home">
+                <Grid>
+                    <StackPanel>
+                        <Grid Height="200" Background="#e74c3c">
+                            <StackPanel>
+                                <Grid Height="30" VerticalAlignment="Top" Background="#c0392b">
+                                    <TextBlock Text="Highlights" FontSize="25" FontWeight="Medium" HorizontalAlignment="Right" Margin="0,0,5,0"></TextBlock>
+                                </Grid>
+                                <Grid Height="170">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                            <TextBlock x:Name="komo" Text="Komoditas" FontSize="20" Margin="0,0,5,0"></TextBlock>
+                                            <TextBlock Text="-" FontSize="20" Margin="0,0,5,0"></TextBlock>
+                                            <TextBlock x:Name="nasional" Text="Nasional" FontSize="20" Margin="0,0,5,0"></TextBlock>
+                                        </StackPanel>
+                                        <Grid>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Rp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="110" Margin="0,0,10,0"></TextBlock>                                   
+                                                    
+                                                <StackPanel Height="125" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Margin="0,8,10,0">
+                                                    <TextBlock Text="Last Week"></TextBlock>
+                                                    <TextBlock x:Name="hrg_last" Text="5.000" FontSize="40" VerticalAlignment="Top"></TextBlock>
+                                                    
+                                                    <TextBlock Text="Present"></TextBlock>
+                                                    <TextBlock x:Name="hrg_now" Text="5.500" FontSize="40" VerticalAlignment="Bottom"></TextBlock>
+                                                </StackPanel>
+                                                
+                                                <Grid Width="130" VerticalAlignment="Center">
+                                                    <Path x:Name="hrg_up" Visibility="Collapsed" Data="F1M1719.66,218.12L1735.66,246.166 1751.66,274.21 1719.66,274.21 1687.66,274.21 1703.66,246.166 1719.66,218.12z" Stretch="Uniform" Fill="#FF14E400" Width="75" Height="75" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                        <Path.RenderTransform>
+                                                            <TransformGroup>
+                                                                <TransformGroup.Children>
+                                                                    <RotateTransform Angle="0" />
+                                                                    <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                                </TransformGroup.Children>
+                                                            </TransformGroup>
+                                                        </Path.RenderTransform>
+                                                    </Path>
+
+                                                    <Path x:Name="hrg_down" Visibility="Visible" Data="F1M1464.78,374.21C1466.31,374.21,1466.94,375.538,1466.17,376.861L1435.89,429.439C1435.12,430.759,1433.87,430.823,1433.11,429.5L1402.82,376.827C1402.06,375.507,1402.69,374.21,1404.21,374.21L1464.78,374.21z" Stretch="Uniform" Fill="#FFFC0000" Width="75" Height="75" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                        <Path.RenderTransform>
+                                                            <TransformGroup>
+                                                                <TransformGroup.Children>
+                                                                    <RotateTransform Angle="0" />
+                                                                    <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                                </TransformGroup.Children>
+                                                            </TransformGroup>
+                                                        </Path.RenderTransform>
+                                                    </Path>
+                                                </Grid>
+
+                                                
+                                            </StackPanel>
+                                            
+                                        </Grid>
+                                        
+                                        
+                                    </StackPanel>
+                                    
+
+                                </Grid>
+                            </StackPanel>
+                           
+                            
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </PivotItem>
+            
+            <PivotItem Header="Tweet">
+                
+            </PivotItem>
+            
+            <PivotItem Header="News">
+                
+            </PivotItem>
+            
+            
+        </Pivot>
     </Grid>
 </Page>
