@@ -40,6 +40,8 @@
                         <TextBox InputScope="EmailSmtpAddress" PlaceholderText="Alamat Email" Name="email"></TextBox>
                         <TextBlock Text="Kata Sandi" FontSize="20"></TextBlock>
                         <PasswordBox PlaceholderText="Kata Sandi" Name="pass"></PasswordBox>
+                        <TextBlock Text="Ulang Kata Sandi" FontSize="20"></TextBlock>
+                        <PasswordBox PlaceholderText="Ulang Kata Sandi" Name="confPass"></PasswordBox>
                         <TextBlock Text="Daftar Sebagai" FontSize="20"></TextBlock>
 
                         <StackPanel Orientation="Vertical">

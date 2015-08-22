@@ -1,5 +1,6 @@
 Assets\DarkGray.png
 Assets\LightGray.png
+Assets\logo bayti.png
 Assets\MediumGray.png
 DataModel\SampleData.json
 Assets\HubBackground.theme-dark.png
@@ -10,6 +11,7 @@ Assets\SplashScreen.scale-240.png
 Assets\Square71x71Logo.scale-240.png
 Assets\StoreLogo.scale-240.png
 Assets\WideLogo.scale-240.png
+About.xbf
 App.xbf
 Forgot.xbf
 HubPage.xbf
