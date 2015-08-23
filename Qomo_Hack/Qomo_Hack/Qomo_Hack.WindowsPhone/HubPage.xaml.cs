@@ -145,24 +145,19 @@ namespace Qomo_Hack
         /// </para>
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.</param>
+
+        
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //this.navigationHelper.OnNavigatedTo(e);
+            this.navigationHelper.OnNavigatedTo(e);
+        }
 
-            // Read data from a simple setting
+         void RefreshData()
+        {
             var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            Object value = localSettings.Values["exampleSetting"];
 
-            if (value == null)
-            {
-                // No data
-            }
-            else
-            {
-                string valu = Convert.ToString(value);
-                var dialog = new MessageDialog(valu).ShowAsync();
-            }
-
+            string value = Convert.ToString(localSettings.Values["exampleSetting"]);
+            var dialog = new MessageDialog(value).ShowAsync();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -236,6 +231,11 @@ namespace Qomo_Hack
                 var dialog = new MessageDialog ("Please check your internet connestion.").ShowAsync();
                 
             }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            RefreshData();
         }
     }
 }

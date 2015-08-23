@@ -10,7 +10,7 @@
   <Identity Name="d8801e93-daed-4696-ab91-f5fbe5167021" Publisher="CN=Moch Tri Dharmawan" Version="1.0.0.0" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="d8801e93-daed-4696-ab91-f5fbe5167021" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Qomo_Hack.WindowsPhone</DisplayName>
+    <DisplayName>Qomo_Hack.WIndowsPhone</DisplayName>
     <PublisherDisplayName>Moch Tri Dharmawan</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -23,8 +23,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Qomo_Hack.WindowsPhone.exe" EntryPoint="Qomo_Hack.WindowsPhone.App">
-      <m3:VisualElements DisplayName="Qomo_Hack.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Qomo_Hack.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
-        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png" />
+      <m3:VisualElements DisplayName="Qomo_Hack.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini." ForegroundText="light" BackgroundColor="transparent">
+        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
     </Application>

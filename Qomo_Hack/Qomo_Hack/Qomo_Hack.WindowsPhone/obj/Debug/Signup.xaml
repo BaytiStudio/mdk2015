@@ -36,7 +36,7 @@
                     <TextBlock Text="Daftar" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
                 </StackPanel>
 
-                <ScrollViewer Height="600">
+                <ScrollViewer Height="500">
                     <Grid>
                         <StackPanel>
                             <TextBlock Foreground="Black" Text="Nama Lengkap" FontSize="20"></TextBlock>
@@ -52,9 +52,9 @@
                             <TextBlock Foreground="Black" Text="Daftar Sebagai" FontSize="20"></TextBlock>
 
                             <StackPanel Orientation="Vertical">
-                                <RadioButton Content="Produsen" BorderBrush="Black" Foreground="Black" Name="produsen"></RadioButton>
-                                <RadioButton Content="Distributor" BorderBrush="Black" Foreground="Black" Name="distributor"></RadioButton>
-                                <RadioButton Content="Konsumen" BorderBrush="Black" Foreground="Black" Name="konsumen"></RadioButton>
+                                <RadioButton x:ConnectionId='2' Content="Produsen" BorderBrush="Black" Foreground="Black" Name="produsen"                        ></RadioButton>
+                                <RadioButton x:ConnectionId='3' Content="Distributor" BorderBrush="Black" Foreground="Black" Name="distributor"                        ></RadioButton>
+                                <RadioButton x:ConnectionId='4' Content="Konsumen" BorderBrush="Black" Foreground="Black" Name="konsumen"                        ></RadioButton>
                             </StackPanel>
                             <Button x:ConnectionId='1' HorizontalAlignment="Center" Content="Daftar" Foreground="Black" BorderBrush="Black"                     ></Button>
 

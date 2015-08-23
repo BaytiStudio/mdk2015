@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -15,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Web.Http;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -107,14 +109,67 @@ namespace Qomo_Hack
         }
 
         #endregion
-
-        private void signup_click(object sender, RoutedEventArgs e)
+        string pilihan;
+        private void radio_Checked(object sender, RoutedEventArgs e)
         {
-            //{
-                    //Logic sign up, masuk ke database web
-            //}
+            if (sender == produsen)
+            { pilihan = "produsen"; }
+            else if (sender == distributor)
+            { pilihan = "distributor"; }
+            else
+            { pilihan = "konsumen";  }
+        }
+        private async void signup_click(object sender, RoutedEventArgs e)
+        {
+            if (nama_lkp.Text != null || id_num.Text != null || pass.Password.ToString() != null || confPass.Password.ToString() != null ||pilihan!=null)
+            {
+                if (pass.Password.ToString() == confPass.Password.ToString())
+                {
+
+                    Uri uri = new Uri("http://antakusuma.hol.es/wp/signup.php", UriKind.Absolute);
+                    Dictionary<string, string > pairs = new Dictionary<string, string>();
+                    pairs.Add("sNama", nama_lkp.Text);
+                    pairs.Add("sKtp", id_num.Text);
+                    pairs.Add("sUsername", email.Text);
+                    pairs.Add("sPassword", pass.Password.ToString());
+                    pairs.Add("sJenis" , pilihan);
+                    HttpFormUrlEncodedContent formContent =
+                        new HttpFormUrlEncodedContent(pairs);
+
+                    HttpClient client = new HttpClient();
+                    HttpResponseMessage response = await client.PostAsync(uri, formContent);
+                    
+ 
+
+                    
+
+                    //if (strStatus == "0")
+                    //{
+                    //    var dialog = new MessageDialog(strError).ShowAsync();
+                    //    //MessageBox.Show(e.Result.ToString());
+                    //    //MessageBox.Show(strError);
+
+
+                    //}
+
+                    //else
+                    ////if (strStatus == "1")
+                    //{
+                    //}
+                }
+                else
+                {
+                    var pesan = new MessageDialog("Password tidak cocok").ShowAsync();
+                }
+            }
+            else
+            {
+                var pesan = new MessageDialog("mohon lengkapi data terlebih dahulu").ShowAsync();
+            }
 
             Frame.Navigate(typeof(Login));
         }
+
+        
     }
 }
