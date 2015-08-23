@@ -167,8 +167,7 @@ namespace Qomo_Hack
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
-<<<<<<< HEAD
-=======
+
         }
 
          void RefreshData()
@@ -177,7 +176,7 @@ namespace Qomo_Hack
 
             string value = Convert.ToString(localSettings.Values["exampleSetting"]);
             var dialog = new MessageDialog(value).ShowAsync();
->>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -255,7 +254,7 @@ namespace Qomo_Hack
             }
         }
 
-<<<<<<< HEAD
+
         private async void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             response = new HttpResponseMessage();
@@ -340,11 +339,10 @@ namespace Qomo_Hack
             //http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh701480.aspx
             //var success = await 
             Windows.System.Launcher.LaunchUriAsync(targetUri);
-=======
-        private void button_Click(object sender, RoutedEventArgs e)
+        }
+       private void button_Click(object sender, RoutedEventArgs e)
         {
             RefreshData();
->>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
         }
     }
 }

@@ -179,12 +179,10 @@ C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Forgot.xbf
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\About.xbf
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Forgot.xbf
-<<<<<<< HEAD
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\kosong.xbf
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.g.i.cs
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.g.cs
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.xaml
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.xbf
-=======
 >>>>>>> d8d5bb394b3f5a3f65869b511ad9b0e890a77e12
 >>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
