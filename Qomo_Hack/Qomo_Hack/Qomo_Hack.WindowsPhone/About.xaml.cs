@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Store;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -110,7 +111,8 @@ namespace Qomo_Hack
 
         private void rateus(object sender, TappedRoutedEventArgs e)
         {
-            
+            Windows.System.Launcher.LaunchUriAsync(
+                  new Uri("ms-windows-store:reviewapp?appid=" + CurrentApp.AppId));
         }
     }
 }

@@ -6,10 +6,12 @@
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="ImagePath" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Items" />
-    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="CreatedDate" />
+    <RootPropertyPathName Name="Url" />
     <RootPropertyPathName Name="Daerah" />
     <RootPropertyPathName Name="Group" />
+    <RootPropertyPathName Name="Items" />
     <RootPropertyPathName Name="Item" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -19,37 +21,37 @@
       <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="Transitions" />
       <RootProperty Name="BottomAppBar" />
+      <RootProperty Name="Transitions" />
       <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="ChildrenTransitions" />
-      <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
       <RootEvent Name="Tapped" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
@@ -62,8 +64,11 @@
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
@@ -71,7 +76,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
       <RootProperty Name="CharacterSpacing" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Name" />
@@ -135,8 +139,28 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Height" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Path">
-      <RootProperty Name="Visibility" />
       <RootProperty Name="Data" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="Fill" />
@@ -145,6 +169,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.TransformGroup">
       <RootProperty Name="Children" />
@@ -158,16 +183,30 @@
     </RootType>
     <RootType FullName="Qomo_Hack.HubPage" />
     <RootType FullName="Qomo_Hack.komDaerah" />
+<<<<<<< HEAD
     <RootType FullName="Qomo_Hack.kosong" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
       <RootProperty Name="Height" />
+=======
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Tapped" />
+      <RootEvent Name="Click" />
+>>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Header" />
-      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Name" />
@@ -176,12 +215,18 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Name" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
       <RootProperty Name="Content" />
       <RootProperty Name="Visibility" />
+<<<<<<< HEAD
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Foreground" />
       <RootEvent Name="Checked" />
+=======
+>>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
     </RootType>
+    <RootType FullName="System.String" />
     <RootType FullName="Qomo_Hack.Lapor" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -199,14 +244,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="PlaceholderText" />
     </RootType>
-    <RootType FullName="Qomo_Hack.Login" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
-      <RootProperty Name="DefaultNavigationTransitionInfo" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo" />
-    <RootType FullName="Qomo_Hack.SectionPage" />
-    <RootType FullName="Qomo_Hack.ItemPage" />
-    <RootType FullName="Qomo_Hack.Signup" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="PrimaryCommands" />
     </RootType>
@@ -216,6 +253,14 @@
       <RootProperty Name="IsEnabled" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Qomo_Hack.Login" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
+      <RootProperty Name="DefaultNavigationTransitionInfo" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo" />
+    <RootType FullName="Qomo_Hack.SectionPage" />
+    <RootType FullName="Qomo_Hack.ItemPage" />
+    <RootType FullName="Qomo_Hack.Signup" />
     <RootType FullName="Qomo_Hack.userProfile" />
   </Roots.RootTypes>
 </Roots>

@@ -15,6 +15,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+
+using Windows.Devices.Geolocation;
+using Windows.Services.Maps;
+using TweetSharp;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -27,15 +32,80 @@ namespace Qomo_Hack
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
-
+        public TwitterService service { get; set; }
         public Lapor()
         {
             this.InitializeComponent();
+
+            //TwitterService tweetservice = new TwitterService("SEuJKVyiLrpntSmX76mLLK5rV", "2oLc3FgsOC1heh6vyiKlBXDWKnLo2dO9UAgHDxgS6WPnwbh2Rq");
+            
+            TwitterService service = new TwitterService("SEuJKVyiLrpntSmX76mLLK5rV", "2oLc3FgsOC1heh6vyiKlBXDWKnLo2dO9UAgHDxgS6WPnwbh2Rq");
+            service.AuthenticateWith("197426566-jB7G6TbKGPVHS84rQ2LezVyZp2WJxR5kabaR5sHN", "ntb1049lvRbdX0k5aZkxlWeEvbAZtZm35ekazZnlwBj05");
+            //TwitterStatus result = service.SendTweet(new SendTweetOptions
+            //{
+            //    Status = "Hello, world!"
+            //});
+
+            //TwitterClientInfo twitterClientInfo = new TwitterClientInfo();
+            //twitterClientInfo.ConsumerKey = "SEuJKVyiLrpntSmX76mLLK5rV"; 
+            //twitterClientInfo.ConsumerSecret = "2oLc3FgsOC1heh6vyiKlBXDWKnLo2dO9UAgHDxgS6WPnwbh2Rq";
+
+            //TwitterService twitterService = new TwitterService(twitterClientInfo);
+
+            //if (string.IsNullOrEmpty("197426566-jB7G6TbKGPVHS84rQ2LezVyZp2WJxR5kabaR5sHN") || string.IsNullOrEmpty("ntb1049lvRbdX0k5aZkxlWeEvbAZtZm35ekazZnlwBj05"))
+            //{
+            //    //Now we need the Token and TokenSecret
+
+            //    //Firstly we need the RequestToken and the AuthorisationUrl
+            //    OAuthRequestToken requestToken = twitterService.GetRequestToken();
+            //    string authUrl = twitterService.GetAuthorizationUri(requestToken).ToString();
+
+            //    //authUrl is just a URL we can open IE and paste it in if we want
+            //    var dialog = new MessageDialog("Please Allow This App to send Tweets on your behalf").ShowAsync();
+            //    //Process.Start(authUrl); //Launches a browser that'll go to the AuthUrl.
+
+            //    //Allow the App
+            //    //Console.WriteLine("Enter the PIN from the Browser:");
+            //    //string pin = Console.ReadLine();
+
+            //    OAuthAccessToken accessToken = twitterService.GetAccessToken(requestToken, pin);
+
+            //    string token = accessToken.Token; //Attach the Debugger and put a break point here
+            //    string tokenSecret = accessToken.TokenSecret; //And another Breakpoint here
+
+            //    Console.WriteLine("Write Down The AccessToken: " + token);
+            //    Console.WriteLine("Write Down the AccessTokenSecret: " + tokenSecret);
+            //}
+
+            //twitterService.AuthenticateWith(AccessToken, AccessTokenSecret);
+
+            //Console.WriteLine("Enter a Tweet");
+            //string tweetMessage;
+            //tweetMessage = Console.ReadLine();
+            //TwitterStatus twitterStatus = twitterService.SendTweet(tweetMessage);
+
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
+
+        private async void signin(object sender, Windows.UI.Xaml.RoutedEventArgs args)
+        {
+            //OAuthRequestToken requestToken = service.GetRequestToken();
+
+            //await service.GainAccessToTwitter();
+            //_statusTextBlock.Text = service.Status;
+        }
+
+        //private async void tweet_click(object sender, Windows.UI.Xaml.RoutedEventArgs args)
+        //{
+        //    //await service.("Hello From TwitterRt " + DateTime.Now);
+        //    //_statusTextBlock.Text = service.Status;
+        //}
+
+        //public TwitterService service { get; private set; }
+        
 
         /// <summary>
         /// Gets the <see cref="NavigationHelper"/> associated with this <see cref="Page"/>.
@@ -110,7 +180,16 @@ namespace Qomo_Hack
 
         private void tweet_click(object sender, RoutedEventArgs e)
         {
+            //SendTweetOptions options = new SendTweetOptions();
+            //options.Status = "This is the message I want to Tweet";
+            ////var twitterStatus = service.SendTweet(text);
+            //var responseText = service.Response.Response;
+            //service.SendTweet(options);
 
+            TwitterStatus result = service.SendTweet(new SendTweetOptions
+            {
+                Status = "Hello, world!"
+            });
         }
 
         private void sms_click(object sender, RoutedEventArgs e)
@@ -122,5 +201,22 @@ namespace Qomo_Hack
         {
 
         }
+
+        private void komoditas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        //async Task<string> GetAddressFromCoordinatesAsync(Geoposition geoposition)
+        //{
+        //    var mapLocationFinderResult = await MapLocationFinder.FindLocationsAtAsync(geoposition.Coordinate.Point);
+        //    if (mapLocationFinderResult.Status == MapLocationFinderStatus.Success)
+        //    {
+        //        // hard-coding to only view the first returned possible address ([0]). You might get more than one result, in which case check them against your requirements.
+        //        return mapLocationFinderResult.Locations[0].Address.StreetNumber + " " + mapLocationFinderResult.Locations[0].Address.Street;
+        //    }
+
+        //    return "not found";
+        //}
     }
 }

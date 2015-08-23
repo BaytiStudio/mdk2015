@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
 
     
     <Grid x:Name="LayoutRoot">
@@ -44,8 +44,13 @@
 
                 <StackPanel>
                     <TextBlock Text="Masuk" Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
+<<<<<<< HEAD
                     <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>
                     <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
+=======
+                    <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>                   
+                    <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan Email anda"></TextBox>
+>>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
                     <TextBlock Foreground="Black" Text="Kata Sandi" FontSize="20" ></TextBlock>
                     <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
                     <Button Foreground="Black" BorderBrush="Black" HorizontalAlignment="Center" Content="Masuk" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>
@@ -56,4 +61,10 @@
             </StackPanel>
         </Grid>
     </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Help" Label="about" Click="about"></AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>
