@@ -9,7 +9,6 @@
     <RootPropertyPathName Name="Text" />
     <RootPropertyPathName Name="CreatedDate" />
     <RootPropertyPathName Name="Url" />
-    <RootPropertyPathName Name="Daerah" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="Items" />
     <RootPropertyPathName Name="Item" />
@@ -52,8 +51,11 @@
       <RootProperty Name="Children" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="Tapped" />
@@ -77,6 +79,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="CharacterSpacing" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontFamily" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Name" />
       <RootEvent Name="Tapped" />
@@ -112,8 +115,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Child" />
+      <RootProperty Name="BorderThickness" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetName" />
@@ -128,6 +133,39 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Height" />
+      <RootMethod Name="GetIsVerticalRailEnabled" />
+      <RootMethod Name="SetIsVerticalRailEnabled" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="TabIndex" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="IsSwipeEnabled" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="Click" />
+      <RootEvent Name="Tapped" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
@@ -138,16 +176,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Height" />
-      <RootMethod Name="GetVerticalScrollBarVisibility" />
-      <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Path">
       <RootProperty Name="Data" />
@@ -172,16 +203,6 @@
     </RootType>
     <RootType FullName="Qomo_Hack.HubPage" />
     <RootType FullName="Qomo_Hack.komDaerah" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootEvent Name="Tapped" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Foreground" />
@@ -204,16 +225,11 @@
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Qomo_Hack.Lapor" />
-    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="TabIndex" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="SelectionMode" />
-      <RootProperty Name="IsSwipeEnabled" />
-      <RootProperty Name="Margin" />
-      <RootEvent Name="ItemClick" />
+      <RootEvent Name="GotFocus" />
+      <RootEvent Name="TextChanged" />
+      <RootEvent Name="SuggestionChosen" />
     </RootType>
     <RootType FullName="Qomo_Hack.listDaerah" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">

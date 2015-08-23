@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -186,10 +187,10 @@ namespace Qomo_Hack
             //var responseText = service.Response.Response;
             //service.SendTweet(options);
 
-            TwitterStatus result = service.SendTweet(new SendTweetOptions
-            {
-                Status = "Hello, world!"
-            });
+            //TwitterStatus result = service.SendTweet(new SendTweetOptions
+            //{
+            //    Status = "Hello, world!"
+            //});
         }
 
         private void sms_click(object sender, RoutedEventArgs e)

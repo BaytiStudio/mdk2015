@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace Qomo_Hack
@@ -31,7 +32,7 @@ namespace Qomo_Hack
         public listDaerah()
         {
             this.InitializeComponent();
-
+            Daerah.ItemsSource = suggestions;
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -107,5 +108,46 @@ namespace Qomo_Hack
         }
 
         #endregion
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            //string sql = " SELECT * FROM teacher  ";
+            //MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=859694;database=projekt;");
+            //MySqlCommand cmd = new MySqlCommand(sql, con);
+
+            //con.Open();
+
+            //MySqlDataReader reader = cmd.ExecuteReader();
+
+            //while (reader.Read())
+            //{
+            //    data2txt.Text = reader.GetString("id");
+            //    datatxt.Text = reader.GetString("userId");
+            //}
+        }
+
+        List<string> suggestions = new List<string>() { "S1", "S2", "S3", "U1", "U2", "U3" };
+
+        private void autoBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            autoBox.ItemsSource = suggestions;
+        }
+
+        private void autoBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            string filter = sender.Text.ToUpper();
+            autoBox.ItemsSource = suggestions.Where(s => s.ToUpper().Contains(filter));
+        }
+
+        private void Daerah_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+            Frame.Navigate(typeof(komDaerah), Daerah.SelectedItem.ToString());
+        }
+
+        private void autoBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            Frame.Navigate(typeof(komDaerah), autoBox.Items);
+        }
     }
 }

@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
 
     <Grid x:Name="LayoutRoot">
 
@@ -37,11 +37,21 @@
                     <!--<TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>-->
                 </StackPanel>
 
-                <AutoSuggestBox></AutoSuggestBox>
-                <ListView>
+                <AutoSuggestBox x:Name="autoBox"                 
+                GotFocus="autoBox_GotFocus"
+                TextChanged="autoBox_TextChanged"
+                SuggestionChosen="autoBox_SuggestionChosen">
+                    <AutoSuggestBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}"/>
+                        </DataTemplate>
+                    </AutoSuggestBox.ItemTemplate>
+                </AutoSuggestBox>
+                
+                <ListView Name="Daerah" SelectionChanged="Daerah_SelectionChanged">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Daerah}"></TextBlock>
+                            <TextBlock Text="{Binding}" Foreground="Black" FontSize="20"></TextBlock>
                             <!--Class Daerah blm dibikin-->
                         </DataTemplate>
                     </ListView.ItemTemplate>

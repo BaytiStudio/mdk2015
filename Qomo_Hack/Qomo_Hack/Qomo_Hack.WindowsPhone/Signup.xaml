@@ -36,7 +36,7 @@
                     <TextBlock Text="Daftar" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
                 </StackPanel>
 
-                <ScrollViewer Height="600">
+                <ScrollViewer Height="500">
                     <Grid>
                         <StackPanel>
                             <TextBlock Foreground="Black" Text="Nama Lengkap" FontSize="20"></TextBlock>

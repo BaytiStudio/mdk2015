@@ -16,20 +16,70 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
+
+        <StackPanel>
+            <Grid Height="100" VerticalAlignment="Top" Background="#81CFE0"></Grid>
+            <Grid Height="700" Background="#ECF0F1"></Grid>
+        </StackPanel>
 
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <!--<TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>-->
-        </StackPanel>
+        
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            
+            <StackPanel>
+                <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                    <TextBlock Text="QOMO" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,0,0,0"/>
+                    <TextBlock x:Name="daerah" Text="Daerah" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+                </StackPanel>
+                
+                <StackPanel>
+                    <TextBlock Text="Beras" FontSize="25" Foreground="Black"></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Black" Text="Rp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="110" Margin="0,0,10,0"></TextBlock>
+                        <StackPanel Height="125" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Margin="0,8,10,0">
+                            <TextBlock Foreground="Black" Text="Last Week"></TextBlock>
+                            <TextBlock Foreground="Black" x:Name="hrg_last_brs" Text="5.000" FontSize="40" VerticalAlignment="Top"></TextBlock>
+
+                            <TextBlock Foreground="Black" Text="Present"></TextBlock>
+                            <TextBlock Foreground="Black" x:Name="hrg_now_brs" Text="5.500" FontSize="40" VerticalAlignment="Bottom"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Daging" FontSize="25" Foreground="Black"></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Black" Text="Rp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="110" Margin="0,0,10,0"></TextBlock>
+                        <StackPanel Height="125" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Margin="0,8,10,0">
+                            <TextBlock Foreground="Black" Text="Last Week"></TextBlock>
+                            <TextBlock Foreground="Black" x:Name="hrg_last_dgg" Text="45.000" FontSize="40" VerticalAlignment="Top"></TextBlock>
+
+                            <TextBlock Foreground="Black" Text="Present"></TextBlock>
+                            <TextBlock Foreground="Black" x:Name="hrg_now_dgg" Text="50.500" FontSize="40" VerticalAlignment="Bottom"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Gula" FontSize="25" Foreground="Black"></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Black" Text="Rp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="110" Margin="0,0,10,0"></TextBlock>
+                        <StackPanel Height="125" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Margin="0,8,10,0">
+                            <TextBlock Foreground="Black" Text="Last Week"></TextBlock>
+                            <TextBlock Foreground="Black" x:Name="hrg_last_gula" Text="10.000" FontSize="40" VerticalAlignment="Top"></TextBlock>
+
+                            <TextBlock Foreground="Black" Text="Present"></TextBlock>
+                            <TextBlock Foreground="Black" x:Name="hrg_now_gula" Text="11.500" FontSize="40" VerticalAlignment="Bottom"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

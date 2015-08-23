@@ -176,12 +176,7 @@ namespace Qomo_Hack
                     //Logic login, ambil data dari database
             //}
 
-<<<<<<< HEAD
-           
-=======
-            
 
->>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
         }
             
         
