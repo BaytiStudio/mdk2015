@@ -23,7 +23,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Popups;
 using TweetSharp;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
@@ -221,7 +220,7 @@ namespace Qomo_Hack
                     if (rep.StatusCode == HttpStatusCode.OK)
                     {
                         //bind
-                        this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { tweetList.ItemsSource = ts; } );
+                        //this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { tweetList.ItemsSource = ts; } );
                     }
                 });
             }

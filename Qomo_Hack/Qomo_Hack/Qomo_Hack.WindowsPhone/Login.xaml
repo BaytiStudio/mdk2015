@@ -44,13 +44,9 @@
 
                 <StackPanel>
                     <TextBlock Text="Masuk" Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
-<<<<<<< HEAD
                     <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>
                     <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
-=======
-                    <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>                   
-                    <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan Email anda"></TextBox>
->>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
+                    <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>
                     <TextBlock Foreground="Black" Text="Kata Sandi" FontSize="20" ></TextBlock>
                     <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
                     <Button Foreground="Black" BorderBrush="Black" HorizontalAlignment="Center" Content="Masuk" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>

@@ -159,7 +159,6 @@ C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Wind
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\About.xaml
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\About.xbf
 >>>>>>> 1cee237fb52cb1c15e2c7bcfa9d78deb204b50e6
-<<<<<<< HEAD
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Hammock.WinRT.dll
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\TweetSharp.WinRT.dll
@@ -170,7 +169,6 @@ C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Wind
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Qomo_Hack.WindowsPhone.csproj.GenerateResource.Cache
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Hammock.WinRT.pri.xml
 C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\TweetSharp.WinRT.pri.xml
-=======
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\About.g.i.cs
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\About.g.cs
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Forgot.g.i.cs
@@ -181,12 +179,20 @@ C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Forgot.xbf
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\About.xbf
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Forgot.xbf
-<<<<<<< HEAD
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\kosong.xbf
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.g.i.cs
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.g.cs
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.xaml
 C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\kosong.xbf
-=======
 >>>>>>> d8d5bb394b3f5a3f65869b511ad9b0e890a77e12
 >>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Qomo_Hack.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Hammock.WinRT.dll
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\TweetSharp.WinRT.dll
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Hammock.WinRT.pri
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\TweetSharp.WinRT.pri
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Qomo_Hack.WindowsPhone.csproj.GenerateResource.Cache
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\Hammock.WinRT.pri.xml
+C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\obj\Debug\TweetSharp.WinRT.pri.xml

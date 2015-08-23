@@ -1,1 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Files><file>\Qomo_Hack.WindowsPhone.exe</file></Files>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <file>\Qomo_Hack.WindowsPhone.exe</file>
+  <file>\Hammock.WinRT.dll</file>
+  <file>\Newtonsoft.Json.dll</file>
+  <file>\TweetSharp.WinRT.dll</file>
+</Files>
