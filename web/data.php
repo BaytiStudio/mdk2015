@@ -1,35 +1,67 @@
+<?php 
+  $sql = "SELECT * FROM harga_komoditas ORDER BY create_at DESC";
+  $result = mysql_query($sql);
+  $data = mysql_fetch_array($result);
+
+  $sql1 = "SELECT * FROM harga_komoditas WHERE create_at<now() ORDER BY create_at DESC";
+  $result1 = mysql_query($sql1);
+  $data1 = mysql_fetch_array($result1);
+ ?>
 <div class="container">
 
 
     <div class="row">
 
 
-    <div class="col-md-7">
+    <div class="col-md-6">
       <h1>Komoditas</h1><br>
-      <h6>Nasional</h6>
+      <table>
+         <tbody>
+           <tr>
+             <td>Nama</td>
+             <td>Harga</td>
+           </tr>
+      <?php 
+        $sql3 = "SELECT * FROM harga_komoditas";
+        $result3 = mysql_query($sql3)or die(mysql_error());
+        while ($data3 = mysql_fetch_array($result3)) {
+       ?>
+            <tr>
+              <td><?php echo $data3['nama_komoditas']; ?></td>
+              <td>: <?php echo $data3['harga']; ?></td>
+            </tr>
+        <?php } ?>
+         </tbody>
+       </table>
+      <!-- <h6>Nasional</h6> -->
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <table>
         <tr>
           <h3>harga kemarin</h3>
         </tr>
         <tr>
-          <h3>5000</h3>
+          <h3><?php echo $data1['harga']; ?></h3>
         </tr>
         <tr>
           <h3>harga sekarang</h3>
         </tr>
         <tr>
-          <h3>5500</h3>
+          <h3><?php echo $data['harga']; ?></h3>
         </tr>
       </table>
 
     </div>
     <div class="col-md-2">
+    <?php 
+      if ($data1['harga']<$data['harga']) {    
+     ?>
       <i class="fa fa-arrow-up" style="margin-top:25%;color:red;"></i>
       <h5>naik</h5>
+      <?php }else if($data1['harga']>$data['harga']){ ?>
       <i class="fa fa-arrow-down" style="margin-top:25%;color:green;"></i>
       <h5>turun</h5>
+      <?php } ?>
     </div>
     </div>
     <hr>
@@ -37,7 +69,7 @@
       <div class="col-md-8">
         <h3>kolom berita</h3>
         <?php 
-            $html = bacaHTML("http://ews.kemendag.go.id/");
+            $html = bacaHtml("http://ews.kemendag.go.id/");
             $div_open = explode('<div class="content-wrapper fl-left bggrey">', $html);
             $berita1 = str_replace("src=\"", "src=\"http://ews.kemendag.go.id/", $div_open[1]);
             echo "<div>".$berita1;

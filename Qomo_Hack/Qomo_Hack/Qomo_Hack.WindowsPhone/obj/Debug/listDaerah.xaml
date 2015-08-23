@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="Qomo_Hack.listDaerah"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"                     >
 
     <Grid x:Name="LayoutRoot">
 
@@ -37,11 +37,21 @@
                     <!--<TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>-->
                 </StackPanel>
 
-                <AutoSuggestBox></AutoSuggestBox>
-                <ListView>
+                <AutoSuggestBox x:ConnectionId='2' x:Name="autoBox"                 
+                                           
+                                                 
+                                                           >
+                    <AutoSuggestBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}"/>
+                        </DataTemplate>
+                    </AutoSuggestBox.ItemTemplate>
+                </AutoSuggestBox>
+                
+                <ListView x:ConnectionId='3' Name="Daerah"                                           >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Daerah}"></TextBlock>
+                            <TextBlock Text="{Binding}" Foreground="Black" FontSize="20"></TextBlock>
                             <!--Class Daerah blm dibikin-->
                         </DataTemplate>
                     </ListView.ItemTemplate>

@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\rssItems.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\SampleDataSource.cs" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Dialog-Box-About.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\logo bayti.png" />

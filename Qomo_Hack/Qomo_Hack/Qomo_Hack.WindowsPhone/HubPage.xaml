@@ -384,7 +384,39 @@
             </PivotItem>
             
             <PivotItem Header="News">
-                
+                <Grid>
+                    <ScrollViewer>
+                        <StackPanel>
+                            <StackPanel Name="statusPanel" Orientation="Horizontal" Background="#FF2996AE" VerticalAlignment="Center" >
+                                <TextBlock Text="Status :"  Margin="0,0,10,0" FontSize="20" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="feedStatus" Text="not started" Margin="0" FontSize="20" VerticalAlignment="Center"/>
+                                <Button Margin="10,0,0,0" Content="Refresh" Click="AppBarButton_Click"></Button>
+                            </StackPanel>
+
+                            <ScrollViewer>
+                                <ListView ScrollViewer.IsVerticalRailEnabled="True" ScrollViewer.VerticalScrollMode="Enabled"  Name="lstRSS" ItemsSource="{Binding}" Margin="5,5,5,5" SelectionChanged="lstRSS_SelectionChanged">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" Margin="12,2,0,4" Height="105" Width="432">
+                                                <Border BorderThickness="1" Width="20" Height="99" BorderBrush="#FFFFC700" />
+                                                <StackPanel Width="311" Margin="8,7,0,0">
+                                                    <TextBlock TextWrapping="Wrap" 
+                                                               Margin="10,0"                                                
+                                                               Text="{Binding Title}" 
+                                                               FontFamily="{StaticResource PhoneFontFamilySemiBold}" 
+                                                               FontSize="{StaticResource TextStyleLargeFontSize}"
+                                                               Foreground="Black">
+                                                    </TextBlock>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </ScrollViewer>
+                            
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
             </PivotItem>
             
             

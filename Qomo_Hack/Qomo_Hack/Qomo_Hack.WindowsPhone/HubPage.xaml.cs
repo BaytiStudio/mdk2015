@@ -13,7 +13,6 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
 using Windows.UI.Core;
-using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -24,6 +23,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using TweetSharp;
+using System.Net.Http;
+
+using System.Xml.Linq;
+using Qomo_Hack.DataModel;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -38,11 +41,25 @@ namespace Qomo_Hack
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private readonly ResourceLoader resourceLoader = ResourceLoader.GetForCurrentView("Resources");
 
+        //The Windows.Web.Http.HttpClient class provides the main class for 
+        // sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
+        private HttpClient httpClient;
+        private HttpResponseMessage response;
+
+        // This is the feed address that will be parsed and displayed
+        private String feedAddress = "http://www.bisnis.com/rss/index?c=194";
+
+
         public HubPage()
         {
             this.InitializeComponent();
 
-            
+            httpClient = new HttpClient();
+            // Add a user-agent header
+            var headers = httpClient.DefaultRequestHeaders;
+            headers.UserAgent.ParseAdd("ie");
+            headers.UserAgent.ParseAdd("Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)");
+
 
             // Hub is only supported in Portrait orientation
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
@@ -149,6 +166,8 @@ namespace Qomo_Hack
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+<<<<<<< HEAD
+=======
         }
 
          void RefreshData()
@@ -157,6 +176,7 @@ namespace Qomo_Hack
 
             string value = Convert.ToString(localSettings.Values["exampleSetting"]);
             var dialog = new MessageDialog(value).ShowAsync();
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -201,6 +221,8 @@ namespace Qomo_Hack
            Frame.Navigate(typeof(About));
         }
 
+       
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             if (Frame.CanGoBack)
@@ -215,7 +237,7 @@ namespace Qomo_Hack
                 service.AuthenticateWith("197426566-jB7G6TbKGPVHS84rQ2LezVyZp2WJxR5kabaR5sHN", "ntb1049lvRbdX0k5aZkxlWeEvbAZtZm35ekazZnlwBj05");
 
                 //ScreenName is the profile name of the twitter user.
-                service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions() { ScreenName = "OfficialiNewsTV  " }, (ts, rep) =>
+                service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions() { ScreenName = "PerumBULOG" }, (ts, rep) =>
                 {
                     if (rep.StatusCode == HttpStatusCode.OK)
                     {
@@ -232,9 +254,96 @@ namespace Qomo_Hack
             }
         }
 
+<<<<<<< HEAD
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            response = new HttpResponseMessage();
+
+            // if 'feedAddress' value changed the new URI must be tested --------------------------------
+            // if the new 'feedAddress' doesn't work, 'feedStatus' informs the user about the incorrect input.
+
+            feedStatus.Text = "Test if URI is valid";
+
+            Uri resourceUri;
+            if (!Uri.TryCreate(feedAddress.Trim(), UriKind.Absolute, out resourceUri))
+            {
+                feedStatus.Text = "Invalid URI, please re-enter a valid URI";
+                return;
+            }
+            if (resourceUri.Scheme != "http" && resourceUri.Scheme != "https")
+            {
+                feedStatus.Text = "Only 'http' and 'https' schemes supported. Please re-enter URI";
+                return;
+            }
+            // ---------- end of test---------------------------------------------------------------------
+
+            string responseText;
+            feedStatus.Text = "Waiting for response ...";
+
+            try
+            {
+                response = await httpClient.GetAsync(resourceUri);
+
+                response.EnsureSuccessStatusCode();
+
+                responseText = await response.Content.ReadAsStringAsync();
+                statusPanel.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+            }
+            catch (Exception ex)
+            {
+                // Need to convert int HResult to hex string
+                feedStatus.Text = "Error = " + ex.HResult.ToString("X") +
+                    "  Message: " + ex.Message;
+                responseText = "";
+            }
+            feedStatus.Text = response.StatusCode + " " + response.ReasonPhrase;
+
+            // now 'responseText' contains the feed as a verified text.
+            // next 'responseText' is converted as the rssItems class model definition to be displayed as a list
+
+            List<rssItems> lstData = new List<rssItems>();
+            XElement _xml = XElement.Parse(responseText);
+            foreach (XElement value in _xml.Elements("channel").Elements("item"))
+            {
+                rssItems _item = new rssItems();
+
+                _item.Title = value.Element("title").Value;
+
+                _item.Description = value.Element("description").Value;
+
+                _item.Link = value.Element("link").Value;
+
+                _item.Category = value.Element("category").Value;
+
+                lstData.Add(_item);
+
+
+            }
+
+            // lstRSS is bound to the lstData: the final result of the RSS parsing
+            lstRSS.DataContext = lstData;
+
+        }
+
+        private void lstRSS_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // if item clicked navigate to the webpage
+
+            var selected = lstRSS.SelectedItem as rssItems;
+
+            WebView webBrowserTask = new WebView();
+            Uri targetUri = new Uri(selected.Link);
+
+            //webbrowser task launcher for Windows 8.1
+            //http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh701480.aspx
+            //var success = await 
+            Windows.System.Launcher.LaunchUriAsync(targetUri);
+=======
         private void button_Click(object sender, RoutedEventArgs e)
         {
             RefreshData();
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
         }
     }
 }
