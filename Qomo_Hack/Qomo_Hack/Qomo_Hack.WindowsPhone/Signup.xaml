@@ -52,9 +52,9 @@
                             <TextBlock Foreground="Black" Text="Daftar Sebagai" FontSize="20"></TextBlock>
 
                             <StackPanel Orientation="Vertical">
-                                <RadioButton Content="Produsen" BorderBrush="Black" Foreground="Black" Name="produsen"></RadioButton>
-                                <RadioButton Content="Distributor" BorderBrush="Black" Foreground="Black" Name="distributor"></RadioButton>
-                                <RadioButton Content="Konsumen" BorderBrush="Black" Foreground="Black" Name="konsumen"></RadioButton>
+                                <RadioButton Content="Produsen" BorderBrush="Black" Foreground="Black" Name="produsen" Checked="radio_Checked"></RadioButton>
+                                <RadioButton Content="Distributor" BorderBrush="Black" Foreground="Black" Name="distributor" Checked="radio_Checked"></RadioButton>
+                                <RadioButton Content="Konsumen" BorderBrush="Black" Foreground="Black" Name="konsumen" Checked="radio_Checked"></RadioButton>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Daftar" Foreground="Black" BorderBrush="Black" Click="signup_click"></Button>
 

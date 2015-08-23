@@ -1,5 +1,6 @@
 <?php
   include_once 'lib/curl.php';
+  include_once 'db/koneksi.php';
  ?>
 <!doctype html>
 <html lang="en">

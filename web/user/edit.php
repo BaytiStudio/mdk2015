@@ -6,7 +6,7 @@
  ?>
 <div class="container">
   <h2 class="text-center">Edit User</h2>
-  <form class="" action="" method="post">
+  <form class="" action="../db/update.php" method="post">
     <div class="row">
     <div class="form-group">
       <div class="col-md-4">
@@ -35,7 +35,7 @@
           </td>
           <td>
             <!-- <h5>wawanmtd@gmail.com</h5> -->
-            <input type="text" name="nama" value="<?php echo $hasil['email']; ?>" placeholder="">
+            <input type="text" name="email" value="<?php echo $hasil['email']; ?>" placeholder="">
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -44,7 +44,7 @@
           </td>
           <td>
             <!-- <h5>312874618249</h5> -->
-            <input type="text" name="nama" value="<?php echo $hasil['no_identitas']; ?>" placeholder="">
+            <input type="text" name="no_identitas" value="<?php echo $hasil['no_identitas']; ?>" placeholder="">
           </td>
         </tr>
         <tr class="form-horizontal">
@@ -71,7 +71,7 @@
             <h5>Alamat</h5>
           </td>
           <td>
-            <input type="text" name="" value="<?php echo $hasil['alamat']; ?>" placeholder="JL.benda timur no.4" class="form-control">
+            <input type="text" name="alamat" value="<?php echo $hasil['alamat']; ?>" placeholder="JL.benda timur no.4" class="form-control">
           </td>
         </tr>
         <tr>
