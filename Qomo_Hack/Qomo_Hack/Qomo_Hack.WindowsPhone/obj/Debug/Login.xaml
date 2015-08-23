@@ -37,41 +37,22 @@
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0" >
             <StackPanel>
-<<<<<<< HEAD
-                <TextBlock Text="Masuk" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
-                <TextBlock Text="Email" FontSize="20"></TextBlock>
-
-                <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Type your registered email"></TextBox>
-                <TextBlock Text="Password" FontSize="20" ></TextBlock>
-                <PasswordBox PlaceholderText="Your account password" Name="password"></PasswordBox>
-                <Button x:ConnectionId='1' x:Name="btnlogin" HorizontalAlignment="Center" Content="Login"                    FontSize="25" Margin="0,0,0,20"></Button>
-                <TextBlock x:ConnectionId='2' Text="Sign Up" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>                
-                <TextBlock x:ConnectionId='3' Text="Forgot Password" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
-
-                <!--<TextBox x:Name="email1" InputScope="EmailSmtpAddress"  PlaceholderText="Masukan email anda"></TextBox>
-                <TextBlock Text="Kata Sandi" FontSize="20" ></TextBlock>
-                <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
-                <Button HorizontalAlignment="Center" Content="Masuk" Tapped="login_tap" FontSize="25" Margin="0,0,0,20"></Button>-->
-                <TextBlock x:ConnectionId='4' Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>                
-                <TextBlock x:ConnectionId='5' Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
-
-=======
                 <StackPanel Grid.Row="0" Margin="19,0,0,0">
                     <!--<TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>-->
                     <TextBlock Text="QOMO" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
                 </StackPanel>
-                
+
                 <StackPanel>
                     <TextBlock Text="Masuk" Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
-                    <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>                   
+                    <TextBlock Text="Email" Foreground="Black" FontSize="20"></TextBlock>
                     <TextBox InputScope="EmailSmtpAddress" Name="email" PlaceholderText="Masukan email anda"></TextBox>
                     <TextBlock Foreground="Black" Text="Kata Sandi" FontSize="20" ></TextBlock>
                     <PasswordBox PlaceholderText="Sandi akun anda" Name="password"></PasswordBox>
                     <Button x:ConnectionId='1' Foreground="Black" BorderBrush="Black" HorizontalAlignment="Center" Content="Masuk"                    FontSize="25" Margin="0,0,0,20"></Button>
                     <TextBlock x:ConnectionId='2' Foreground="Black" Text="Daftar Akun" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,10"                    ></TextBlock>
                     <TextBlock x:ConnectionId='3' Foreground="Black" Text="Lupa Sandi" HorizontalAlignment="Center" FontSize="25"                    ></TextBlock>
+                    <Button x:ConnectionId='4' HorizontalAlignment="Center"                     />
                 </StackPanel>
->>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
             </StackPanel>
         </Grid>
     </Grid>

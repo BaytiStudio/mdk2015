@@ -166,9 +166,8 @@ namespace Qomo_Hack
 
                 // Create a simple setting
 
-                localSettings.Values["exampleSetting"] = "Hello Windows";
-
-                var dialog = new MessageDialog("SELAMAT ANDA BERHASIL").ShowAsync();
+                localSettings.Values["exampleSetting"] = email.Text;
+                var dialog = new MessageDialog("berhasil").ShowAsync();
                 Frame.Navigate(typeof(HubPage));
             }
 
@@ -176,12 +175,7 @@ namespace Qomo_Hack
                     //Logic login, ambil data dari database
             //}
 
-<<<<<<< HEAD
-           
-=======
-            
 
->>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
         }
             
         
@@ -199,6 +193,11 @@ namespace Qomo_Hack
         private void forgot_tap(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(Forgot));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(kosong));
         }
     }
 }

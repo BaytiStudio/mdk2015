@@ -95,6 +95,9 @@
     <Compile Include="komDaerah.xaml.cs">
       <DependentUpon>komDaerah.xaml</DependentUpon>
     </Compile>
+    <Compile Include="kosong.xaml.cs">
+      <DependentUpon>kosong.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lapor.xaml.cs">
       <DependentUpon>Lapor.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="komDaerah.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kosong.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

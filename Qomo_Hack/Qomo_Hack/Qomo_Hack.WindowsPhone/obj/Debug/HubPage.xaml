@@ -64,7 +64,9 @@
                     <StackPanel Grid.Column="1" Margin="14.5,0,0,0">
                         <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}"/>
                         <TextBlock Text="{Binding Subtitle}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}"/>
+                        
                     </StackPanel>
+                    
                 </Grid>
             </DataTemplate>
         </ResourceDictionary>
@@ -192,9 +194,9 @@
                                     <TextBlock Text="Highlights" FontSize="25" FontWeight="Medium" HorizontalAlignment="Right" Margin="0,0,5,0"></TextBlock>
                                 </Grid>
                                 
-                                <Grid x:ConnectionId='6' Height="170"                     >
+                                <Grid x:ConnectionId='7' Height="170"                     >
                                     <StackPanel>
-                                        <StackPanel x:ConnectionId='7' Orientation="Horizontal" Margin="5,0,0,10"                     >
+                                        <StackPanel x:ConnectionId='8' Orientation="Horizontal" Margin="5,0,0,10"                     >
                                             <TextBlock x:Name="komo" Text="Komoditas" FontSize="20" Margin="0,0,5,0"></TextBlock>
                                             <TextBlock Text="-" FontSize="20" Margin="0,0,5,0"></TextBlock>
                                             <TextBlock x:Name="nasional" Text="Nasional" FontSize="20" Margin="0,0,5,0"></TextBlock>
@@ -252,7 +254,7 @@
                                 <ColumnDefinition Width="180" />
                             </Grid.ColumnDefinitions>
 
-                            <Grid x:ConnectionId='2' Grid.Row="0" Background="#f1c40f"                   >
+                            <Grid x:ConnectionId='3' Grid.Row="0" Background="#f1c40f"                   >
                                 <TextBlock Text="Lapor" Margin="0,0,5,0" Foreground="Black" FontSize="25" 
                                            HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                             </Grid>
@@ -269,18 +271,18 @@
                                     <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Grid x:ConnectionId='3' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
+                                <Grid x:ConnectionId='4' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
                                     <TextBlock Text="Search" Margin="0,0,5,0" Foreground="Black" FontSize="17"
                                                VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                                 </Grid>
 
-                                <Grid x:ConnectionId='4' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
+                                <Grid x:ConnectionId='5' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
                                     <TextBlock Text="Profile" Margin="0,0,5,0" Foreground="Black" FontSize="17"
                                                VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                     </TextBlock>
                                 </Grid>
 
-                                <Grid x:ConnectionId='5' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
+                                <Grid x:ConnectionId='6' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
                                     <TextBlock Text="About" Margin="0,0,5,0" Foreground="Black" FontSize="17"
                                                VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                     </TextBlock>
@@ -311,6 +313,7 @@
             
             
         </Pivot>
+        <Button x:ConnectionId='2' x:Name="button"                      Content="Button" HorizontalAlignment="Left" Margin="182,515,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>
 
