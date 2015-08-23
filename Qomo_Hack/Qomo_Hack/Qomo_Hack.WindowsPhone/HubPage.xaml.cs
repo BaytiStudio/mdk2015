@@ -22,7 +22,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Popups;
 using TweetSharp;
 using System.Net.Http;
 
@@ -242,7 +241,7 @@ namespace Qomo_Hack
                     if (rep.StatusCode == HttpStatusCode.OK)
                     {
                         //bind
-                        this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { tweetList.ItemsSource = ts; } );
+                        //this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { tweetList.ItemsSource = ts; } );
                     }
                 });
             }

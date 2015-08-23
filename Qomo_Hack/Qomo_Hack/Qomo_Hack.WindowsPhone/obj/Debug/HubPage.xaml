@@ -254,7 +254,22 @@
                                 <ColumnDefinition Width="180" />
                             </Grid.ColumnDefinitions>
 
+<<<<<<< HEAD
                             <Grid x:ConnectionId='5' Grid.Row="0" Background="#f1c40f"                   >
+=======
+<<<<<<< HEAD
+                            <Grid x:ConnectionId='3' Grid.Row="0" Background="#f1c40f"                   >
+=======
+<<<<<<< HEAD
+                            <Grid x:ConnectionId='4' Grid.Row="0" Background="#f1c40f"                   >
+=======
+<<<<<<< HEAD
+                            <Grid x:ConnectionId='3' Grid.Row="0" Background="#f1c40f"                   >
+=======
+                            <Grid x:ConnectionId='2' Grid.Row="0" Background="#f1c40f"                   >
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
                                 <Path Data="M24.713566,54.414L27.674033,56.798189 30.628,59.181179 27.084799,60.551189 23.552,61.920998 24.127633,58.169399z M39.781575,32.973001L47.908998,39.514576 34.488625,56.185001 26.360999,49.642031z M47.339874,26.792416C48.508808,26.777681 49.689411,27.153134 50.670298,27.94158 52.912325,29.745042 53.269096,33.034154 51.461937,35.27513L49.781168,37.365002 41.657999,30.827079 43.338268,28.735807C44.353333,27.475314,45.83696,26.811362,47.339874,26.792416z M17.229177,0L37.181767,0C41.219584,0,44.476799,3.212183,44.597898,7.2122116L44.6147,7.2122116 44.6147,7.3919029 44.619999,8.1211472 44.6147,18.962336 40.879683,18.962336 40.879683,7.2305222C40.770283,5.2734776,39.168175,3.7148666,37.181767,3.7148666L18.590583,3.7148666 18.590583,14.475304C18.590583,16.73702,16.743475,18.589933,14.473365,18.589933L3.719986,18.589933 3.719986,48.342748C3.719986,50.389662,5.3840542,52.058973,7.4368038,52.058973L21.675897,52.058973 21.099694,55.779001 7.4368038,55.779001C3.3293648,55.779001,0,52.441776,0,48.342748L0,17.290424 0,17.287824C0.0045166016,17.222823 0.01953125,17.160323 0.03125,17.095122 0.063720703,16.955822 0.079345703,16.90892 0.10156441,16.86462 0.16076851,16.709721 0.19006348,16.64332 0.21997261,16.584719 0.29101753,16.454418 0.34375191,16.371218 0.39904976,16.294317 0.50256538,16.149817 0.55469131,16.089916 0.60412788,16.024815 0.74805069,15.859514 0.82934952,15.770912 0.91992569,15.675913L15.67777,0.91919708C15.76827,0.82812881 15.856771,0.74866104 15.945372,0.67578506 16.086572,0.55334854 16.141872,0.50647354 16.203173,0.46484756 16.361973,0.34888077 16.441474,0.30469131 16.503974,0.26293945 16.548174,0.23828125 16.592474,0.21875 16.641874,0.19396973 16.776075,0.13012695 16.822975,0.1105957 16.869876,0.094970703 17.006577,0.046875 17.117276,0.022094727 17.225277,0.01171875z" Stretch="Uniform" Fill="#FFFFFFFF" Width="88" Height="88" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
                                     <Path.RenderTransform>
                                         <TransformGroup>
@@ -282,7 +297,22 @@
                                     <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
 
+<<<<<<< HEAD
                                 <Grid x:ConnectionId='6' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='4' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='5' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='4' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
+=======
+                                <Grid x:ConnectionId='3' Grid.Row="0" Grid.Column="0" Background="#4183D7"                     >
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
                                     <Path Data="F1M54.8672,51.2266L42.1145,36.0703C44.2473,33.3333 45.6692,29.9946 46.0469,26.2942 47.1016,15.8333 39.4948,6.49219 29.0313,5.43213 18.5729,4.37231 9.2395,11.9868 8.17188,22.4453 7.10938,32.9036 14.7291,42.2446 25.1875,43.3098 28.6692,43.6563 32.0416,43.0469 35.0051,41.6797L47.9244,57.0547C49.5416,58.9634 52.401,59.2134 54.3125,57.6094 56.2266,55.9973 56.4766,53.1348 54.8672,51.2266 M15.9219,23.1614C16.5547,16.9399 22.1094,12.4087 28.3333,13.0391 34.5573,13.6719 39.0781,19.2266 38.4453,25.4426 37.8098,31.6692 32.2708,36.1953 26.0416,35.5703 19.8203,34.9399 15.2891,29.3828 15.9219,23.1614" Stretch="Uniform" Fill="#FFFFFFFF" Width="50" Height="50" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
                                         <Path.RenderTransform>
                                             <TransformGroup>
@@ -298,7 +328,22 @@
                                                VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                                 </Grid>
 
+<<<<<<< HEAD
                                 <Grid x:ConnectionId='7' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='5' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='6' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='5' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
+=======
+                                <Grid x:ConnectionId='4' Grid.Row="0" Grid.Column="2" Background="#E87E04"                     >
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
                                     <Path Data="M16.710899,36.727C20.7409,39.759457 25.747499,41.558827 31.1693,41.558827 36.588501,41.558827 41.596401,39.759457 45.627602,36.727 55.046902,37.911882 62.335999,45.946764 62.335999,55.688923L62.335999,64 0,64 0,55.688923C0,45.946764,7.2904,37.911882,16.710899,36.727z M31.169201,0C40.807137,0 48.622002,7.8164558 48.622002,17.455803 48.622002,27.095258 40.807137,34.909003 31.169201,34.909003 21.528767,34.909003 13.715,27.095258 13.715,17.455803 13.715,7.8164558 21.528767,0 31.169201,0z" Stretch="Uniform" Fill="#FFFFFFFF" Width="50" Height="50" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
                                         <Path.RenderTransform>
                                             <TransformGroup>
@@ -315,7 +360,22 @@
                                     </TextBlock>
                                 </Grid>
 
+<<<<<<< HEAD
                                 <Grid x:ConnectionId='8' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='6' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='7' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
+=======
+<<<<<<< HEAD
+                                <Grid x:ConnectionId='6' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
+=======
+                                <Grid x:ConnectionId='5' Grid.Row="2" Grid.Column="0" Background="#2ECC71"                   >
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
                                     <Image Source="/Assets/Dialog-Box-About.png"></Image>
                                     <TextBlock Text="About" Margin="0,0,5,0" Foreground="Black" FontSize="17"
                                                VerticalAlignment="Bottom" HorizontalAlignment="Right">

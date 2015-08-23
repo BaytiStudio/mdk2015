@@ -19,16 +19,24 @@
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\bin\Debug\Qomo_Hack.WindowsPhone.exe">
       <PackagePath>Qomo_Hack.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\packages\TweetMoaSharp.3.0.0.7\lib\portable-win81+wpa81\Hammock.WinRT.dll">
+=======
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\packages\TweetMoaSharp.3.0.0.7\lib\portable-win81+wpa81\Hammock.WinRT.dll">
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
       <PackagePath>Hammock.WinRT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\packages\TweetMoaSharp.3.0.0.7\lib\portable-win81+wpa81\TweetSharp.WinRT.dll">
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\packages\TweetMoaSharp.3.0.0.7\lib\portable-win81+wpa81\TweetSharp.WinRT.dll">
       <PackagePath>TweetSharp.WinRT.dll</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Assets\Logo.scale-240.png">
+=======
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Assets\Logo.scale-240.png">
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
@@ -58,13 +66,51 @@
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Assets\HubBackground.theme-light.png">
       <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\Dialog-Box-About.png">
       <PackagePath>Assets\Dialog-Box-About.png</PackagePath>
     </AppxPackagedFile>
+=======
+<<<<<<< HEAD
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\Dialog-Box-About.png">
+=======
+<<<<<<< HEAD
+    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\Dialog-Box-About.png">
+      <PackagePath>Assets\Dialog-Box-About.png</PackagePath>
+    </AppxPackagedFile>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\Dialog-Box-About.png">
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+      <PackagePath>Assets\Dialog-Box-About.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\logo bayti.png">
+      <PackagePath>Assets\logo bayti.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Muchtar_2\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\LightGray.png">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d8d5bb394b3f5a3f65869b511ad9b0e890a77e12
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\logo bayti.png">
       <PackagePath>Assets\logo bayti.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\LightGray.png">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b95e12d2044de1fb71c22de3718b0a70d2a0579d
+>>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
       <PackagePath>Assets\LightGray.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.Shared\Assets\MediumGray.png">

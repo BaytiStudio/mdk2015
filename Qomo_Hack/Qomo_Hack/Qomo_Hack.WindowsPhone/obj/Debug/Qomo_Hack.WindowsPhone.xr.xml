@@ -102,6 +102,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="ImageSource" />
+      <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -204,6 +205,33 @@
     </RootType>
     <RootType FullName="Qomo_Hack.HubPage" />
     <RootType FullName="Qomo_Hack.komDaerah" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <RootType FullName="Qomo_Hack.kosong" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <RootType FullName="Qomo_Hack.kosong" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Height" />
+=======
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Tapped" />
+      <RootEvent Name="Click" />
+>>>>>>> 4b17133b2ab73c60f111bac0d2cfafe3c70b37fc
+    </RootType>
+>>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Foreground" />

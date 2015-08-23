@@ -21,6 +21,7 @@ using Windows.UI.Popups;
 using Windows.Devices.Geolocation;
 using Windows.Services.Maps;
 using TweetSharp;
+using Windows.Web.Http;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -91,7 +92,7 @@ namespace Qomo_Hack
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
 
-        private async void signin(object sender, Windows.UI.Xaml.RoutedEventArgs args)
+        private  void signin(object sender, Windows.UI.Xaml.RoutedEventArgs args)
         {
             //OAuthRequestToken requestToken = service.GetRequestToken();
 
@@ -179,14 +180,30 @@ namespace Qomo_Hack
 
         #endregion
 
-        private void tweet_click(object sender, RoutedEventArgs e)
+        private async void tweet_click(object sender, RoutedEventArgs e)
         {
             //SendTweetOptions options = new SendTweetOptions();
             //options.Status = "This is the message I want to Tweet";
             ////var twitterStatus = service.SendTweet(text);
             //var responseText = service.Response.Response;
             //service.SendTweet(options);
+            
 
+<<<<<<< HEAD
+            Uri uri = new Uri("http://antakusuma.hol.es/db/lapor.php", UriKind.Absolute);
+            Dictionary<string, string> pairs = new Dictionary<string, string>();
+            pairs.Add("jenis_komoditas", jenis_kom.Text);
+            pairs.Add("harga", hrg_kom);
+            //pairs.Add("sUsername", email.Text);
+            //pairs.Add("sPassword", password.Password.ToString());
+            HttpFormUrlEncodedContent formContent =
+                new HttpFormUrlEncodedContent(pairs);
+
+            HttpClient client = new HttpClient();
+            HttpResponseMessage response = await client.PostAsync(uri, formContent);
+
+=======
+>>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
             //TwitterStatus result = service.SendTweet(new SendTweetOptions
             //{
             //    Status = "Hello, world!"
@@ -206,6 +223,23 @@ namespace Qomo_Hack
         private void komoditas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
+        }
+
+        string pilihan;
+        private void pilihan_Checked(object sender, RoutedEventArgs e)
+        {
+            if (sender == produsen)
+            {
+                pilihan = "produsen";
+            }
+            else if ( sender == distributor)
+            {
+                pilihan = "distributor";
+            }
+            else
+            {
+                pilihan = "konsumen";
+            }
         }
 
         //async Task<string> GetAddressFromCoordinatesAsync(Geoposition geoposition)

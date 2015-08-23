@@ -111,8 +111,8 @@ namespace Qomo_Hack
 
         private void rateus(object sender, TappedRoutedEventArgs e)
         {
-            Windows.System.Launcher.LaunchUriAsync(
-                  new Uri("ms-windows-store:reviewapp?appid=" + CurrentApp.AppId));
+        //    Windows.System.Launcher.LaunchUriAsync(
+        //          new Uri("ms-windows-store:reviewapp?appid=" + CurrentApp.AppId));
         }
     }
 }

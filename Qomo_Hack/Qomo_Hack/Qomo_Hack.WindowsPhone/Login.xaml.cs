@@ -198,8 +198,14 @@ namespace Qomo_Hack
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             //Frame.Navigate(typeof(kosong));
         }
+=======
+            Frame.Navigate(typeof(kosong));
+        }
+
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
         private void about(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(About));
@@ -211,7 +217,10 @@ namespace Qomo_Hack
             {
                 ((Frame)Window.Current.Content).BackStack.Clear();
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
         }
     }
 }

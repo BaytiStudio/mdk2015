@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 
 #pragma checksum "C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\HubPage.xaml" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "E8C8F991C0A071587C6B7BD497516DFE"
@@ -88,3 +89,5 @@ namespace Qomo_Hack
 }
 
 
+=======
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4

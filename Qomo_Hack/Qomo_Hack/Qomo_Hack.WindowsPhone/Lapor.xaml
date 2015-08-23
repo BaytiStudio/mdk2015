@@ -9,6 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/LightGray.png"/>
+        </Grid.Background>
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -76,9 +79,9 @@
                         <TextBox Name="jenis_kom" PlaceholderText="Jenis"></TextBox>
                         <TextBlock Foreground="Black" Text="Lapor Sebagai" FontSize="17"></TextBlock>
                         <StackPanel Orientation="Horizontal">
-                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Produsen" Name="produsen" Visibility="Visible"></RadioButton>
-                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Distributor" Name="distributor" Visibility="Collapsed"></RadioButton>
-                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Konsumen" Name="konsumen" Visibility="Visible"></RadioButton>
+                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Produsen" Name="produsen" Visibility="Visible" Checked="pilihan_Checked"></RadioButton>
+                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Distributor" Name="distributor" Visibility="Collapsed" Checked="pilihan_Checked"></RadioButton>
+                            <RadioButton Foreground="Black" BorderBrush="Black" Content="Konsumen" Name="konsumen" Visibility="Visible" Checked="pilihan_Checked"></RadioButton>
                         </StackPanel>
                         <TextBlock Foreground="Black" Text="Harga" FontSize="17"></TextBlock>
                         <TextBox PlaceholderText="Harga Komoditas /kg" InputScope="Number" Name="hrg_kom"></TextBox>

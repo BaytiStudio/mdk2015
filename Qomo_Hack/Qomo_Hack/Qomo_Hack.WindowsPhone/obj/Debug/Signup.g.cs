@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 
 #pragma checksum "C:\Users\Moch Tri Dharmawan\Documents\mdk2015\Qomo_Hack\Qomo_Hack\Qomo_Hack.WindowsPhone\Signup.xaml" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "9843D5C4C2AA14938E65F273B324BF85"
@@ -52,3 +53,5 @@ namespace Qomo_Hack
 }
 
 
+=======
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
