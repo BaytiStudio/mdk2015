@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
+<Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="DefaultViewModel" />
     <RootPropertyPathName Name="Subtitle" />
@@ -168,16 +168,6 @@
       <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="Click" />
-      <RootEvent Name="Tapped" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
@@ -216,6 +206,8 @@
     <RootType FullName="Qomo_Hack.HubPage" />
     <RootType FullName="Qomo_Hack.komDaerah" />
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     <RootType FullName="Qomo_Hack.kosong" />
 =======
 <<<<<<< HEAD
@@ -239,6 +231,7 @@
     </RootType>
 >>>>>>> 91b576bcfc924834afa37d191ae0b5fc4ee6f832
 >>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Foreground" />

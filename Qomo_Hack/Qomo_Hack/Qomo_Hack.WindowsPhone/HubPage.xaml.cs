@@ -176,6 +176,10 @@ namespace Qomo_Hack
 
             string value = Convert.ToString(localSettings.Values["exampleSetting"]);
             var dialog = new MessageDialog(value).ShowAsync();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03f90ae2f03976c1f849944c5d3ff3d1f705b326
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -338,7 +342,12 @@ namespace Qomo_Hack
             //http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh701480.aspx
             //var success = await 
             Windows.System.Launcher.LaunchUriAsync(targetUri);
+<<<<<<< HEAD
         private void button_Click(object sender, RoutedEventArgs e)
+=======
+        }
+       private void button_Click(object sender, RoutedEventArgs e)
+>>>>>>> 03f90ae2f03976c1f849944c5d3ff3d1f705b326
         {
             RefreshData();
         }

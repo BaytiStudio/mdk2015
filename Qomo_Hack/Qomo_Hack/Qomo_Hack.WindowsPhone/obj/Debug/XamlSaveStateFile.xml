@@ -1,7 +1,14 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+<<<<<<< HEAD
+    <LocalAssembly PathName="c:\users\moch tri dharmawan\documents\mdk2015\qomo_hack\qomo_hack\qomo_hack.windowsphone\obj\debug\intermediatexaml\qomo_hack.windowsphone.exe" HashGuid="8e9d0416-511e-d9f5-fb85-4d144029ba60" />
+    <ReferenceAssembly PathName="c:\users\moch tri dharmawan\documents\mdk2015\qomo_hack\packages\tweetmoasharp.3.0.0.7\lib\portable-win81+wpa81\hammock.winrt.dll" HashGuid="be119e24-1ff3-124a-1a78-f3a50f52a76c" />
+    <ReferenceAssembly PathName="c:\users\moch tri dharmawan\documents\mdk2015\qomo_hack\packages\newtonsoft.json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="225745d8-3693-ad6f-ebd5-8845d81f8e0f" />
+    <ReferenceAssembly PathName="c:\users\moch tri dharmawan\documents\mdk2015\qomo_hack\packages\tweetmoasharp.3.0.0.7\lib\portable-win81+wpa81\tweetsharp.winrt.dll" HashGuid="699c5c07-7d6b-0395-6d3a-9424b4bac797" />
+=======
     <ReferenceAssembly PathName="c:\users\muchtar_2\documents\mdk2015\qomo_hack\packages\tweetmoasharp.3.0.0.7\lib\portable-win81+wpa81\hammock.winrt.dll" HashGuid="be119e24-1ff3-124a-1a78-f3a50f52a76c" />
     <ReferenceAssembly PathName="c:\users\muchtar_2\documents\mdk2015\qomo_hack\packages\newtonsoft.json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="225745d8-3693-ad6f-ebd5-8845d81f8e0f" />
     <ReferenceAssembly PathName="c:\users\muchtar_2\documents\mdk2015\qomo_hack\packages\tweetmoasharp.3.0.0.7\lib\portable-win81+wpa81\tweetsharp.winrt.dll" HashGuid="699c5c07-7d6b-0395-6d3a-9424b4bac797" />
+>>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>
