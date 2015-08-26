@@ -93,6 +93,17 @@ namespace Qomo_Hack
             if (rootFrame.Content == null)
             {
 #if WINDOWS_PHONE_APP
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                
+                if(localSettings.Values["exampleSetting"] == "" || localSettings.Values["exampleSetting"] == null)
+                {
+                    rootFrame.Navigate(typeof(Login), e.Arguments);
+                }
+                else
+                {
+                    rootFrame.Navigate(typeof(HubPage), e.Arguments);
+                }
+
                 // Removes the turnstile navigation for startup.
                 if (rootFrame.ContentTransitions != null)
                 {
@@ -110,10 +121,12 @@ namespace Qomo_Hack
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(Login), e.Arguments))
-                {
-                    throw new Exception("Failed to create initial page");
-                }
+                ///////////////////////////////////////////////////////////////////////////////////////////////
+                //if (!rootFrame.Navigate(typeof(Login), e.Arguments))
+                //{
+                //    throw new Exception("Failed to create initial page");
+                //}
+                ////////////////////////////////////////////////////////////////////////////////////////////////
             }
 
             // Ensure the current window is active

@@ -22,6 +22,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Windows.Web.Http;
 using Windows.UI.Popups;
+using Windows.UI;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -112,6 +113,7 @@ namespace Qomo_Hack
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+           // StatusBar.GetForCurrentView().BackgroundColor = Colors.LightBlue;
             this.navigationHelper.OnNavigatedTo(e);
         }
 
@@ -196,16 +198,9 @@ namespace Qomo_Hack
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-<<<<<<< HEAD
-            //Frame.Navigate(typeof(kosong));
-        }
-=======
-            Frame.Navigate(typeof(kosong));
-        }
-
->>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
+        
+            
+        
         private void about(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(About));
@@ -217,10 +212,12 @@ namespace Qomo_Hack
             {
                 ((Frame)Window.Current.Content).BackStack.Clear();
             }
-<<<<<<< HEAD
+        }
 
-=======
->>>>>>> 09a332c2f941e6bcc50b58ff22b49c2d6a8826e4
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+          //StatusBar.GetForCurrentView().BackgroundColor = Colors.LightBlue;
+            //await StatusBar.GetForCurrentView().HideAsync();
         }
     }
 }

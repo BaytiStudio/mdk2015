@@ -23,7 +23,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Qomo_Hack.WindowsPhone.exe" EntryPoint="Qomo_Hack.WindowsPhone.App">
-      <m3:VisualElements DisplayName="Qomo_Hack.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini." ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Qomo_Hack.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini." ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
@@ -36,12 +36,12 @@
     <build:Item Name="SharedGUID" Value="f2e1c85a-6e8a-4ec9-a7bf-0d16b7895db2" />
     <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhoneApp,Version=v8.1" />
-    <build:Item Name="VisualStudio" Version="12.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />
-    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
+    <build:Item Name="VisualStudio" Version="14.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23121.0" />
     <build:Item Name="ProjectGUID" Value="{06B4A8A3-CFB8-4AE1-8652-E02A4C0EA8A3}" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
-    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>

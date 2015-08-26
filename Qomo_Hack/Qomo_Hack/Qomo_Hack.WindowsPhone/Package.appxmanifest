@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Qomo_Hack.WindowsPhone.App">
-      <m3:VisualElements DisplayName="Qomo_Hack.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini." ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Qomo_Hack.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Aplikasi yang dapat melaporkan terkait harga komoditas pokok pada tiap daerah di Indonesia. QOMO juga dapat menampilkan harga komoditas di wilayah-wilayah Indonesia secara Realtime. Dengan menggunakan aplikasi ini, diharapkan dapat membantu pemerintah mengatasi permasalahan komoditas di negeri ini." ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />

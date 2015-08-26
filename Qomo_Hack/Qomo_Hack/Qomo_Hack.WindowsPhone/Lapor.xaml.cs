@@ -188,12 +188,10 @@ namespace Qomo_Hack
             //var responseText = service.Response.Response;
             //service.SendTweet(options);
             
-
-<<<<<<< HEAD
             Uri uri = new Uri("http://antakusuma.hol.es/db/lapor.php", UriKind.Absolute);
             Dictionary<string, string> pairs = new Dictionary<string, string>();
             pairs.Add("jenis_komoditas", jenis_kom.Text);
-            pairs.Add("harga", hrg_kom);
+            pairs.Add("harga", hrg_kom.Text);
             //pairs.Add("sUsername", email.Text);
             //pairs.Add("sPassword", password.Password.ToString());
             HttpFormUrlEncodedContent formContent =
@@ -201,9 +199,7 @@ namespace Qomo_Hack
 
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.PostAsync(uri, formContent);
-
-=======
->>>>>>> 87ea6b9adaecd6ef4eb67d502ba34b7fc4a16455
+            
             //TwitterStatus result = service.SendTweet(new SendTweetOptions
             //{
             //    Status = "Hello, world!"
